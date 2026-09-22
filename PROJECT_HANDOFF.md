@@ -18,9 +18,10 @@ sources, and one owner-supplied archive imported offline.
 - Private GitHub repository: [NoahWLono/amd-open-firmware](https://github.com/NoahWLono/amd-open-firmware).
 - Branch: `codex/amd-open-firmware`.
 - Validated source commit: `ef70dd163e6cf0ff3ee671431987cc31c5c4ec37`,
-  pushed to the branch and confirmed by `git ls-remote`. Resolve the current
-  document commit with `git rev-parse HEAD`; this file cannot contain its own
-  commit hash.
+  pushed to the branch and confirmed by `git ls-remote`. The Node.js 24 CI
+  update was verified on `391d6bc6996e907739916c24bb157fdb9b934ec3`.
+  Resolve the current document commit with `git rev-parse HEAD`; this file
+  cannot contain its own commit hash.
 - Progress ledger: [docs/progress.json](docs/progress.json). Source evidence
   ledger: `src/amd_fw/data/evidence.json`. Observed build results are in
   [docs/build-validation.json](docs/build-validation.json).
@@ -85,8 +86,9 @@ GitHub push was verified. [Source checks run 35789774058](https://github.com/Noa
 passed on commit `ef70dd1`, including format, lint, tests, catalog validation,
 and staged-content audit. GitHub emitted a warning that the original action
 pins target deprecated Node.js 20. The workflow now pins official Node.js 24
-versions of checkout and setup-python. The updated workflow's CI run is
-pending at this checkpoint.
+versions of checkout and setup-python. [Run 35789999557](https://github.com/NoahWLono/amd-open-firmware/actions/runs/35789999557)
+passed on commit `391d6bc`, including install, format, lint, tests, catalog
+validation, and staged-content audit.
 
 ## Private evidence and publication boundary
 
@@ -94,8 +96,9 @@ A restricted sibling directory, `MAPLEBOOT-private`, contains the owner-supplied
 Momiji archive, its private normalized survey report, and preserved build
 evidence. The public catalog's HP case includes only public vendor product
 options and withholds archive-derived observations. No owner-reviewed public
-export of the archive was published. The current build source cache is in a
-separate temporary workspace. Raw surveys, source checkouts, binary inputs,
+export of the archive was published. The pinned build source cache was copied
+to the private sibling directory, and both target source checks passed from
+that copied location. Raw surveys, source checkouts, binary inputs,
 build logs, ROMs, and comparison reports are intentionally excluded from Git.
 The private build-evidence directory preserves the final StarBook run manifests,
 ROMs, logs, and report, the APU2 runs and comparison report, and the generic
@@ -111,8 +114,9 @@ firmware image belongs in the Git repository.
 
 ## Known gaps and next engineering steps
 
-1. Commit the Node.js 24 action pins and this delivery handoff, push, and
-   inspect the resulting CI run.
+1. Finish the requested Bluesky announcement in Maple Nekokami's voice after
+   this delivery checkpoint is pushed and CI passes. Tag the owner's account,
+   then link the thread from GitHub and verify the final push and CI run.
 2. Complete a per-file component inventory and distribution-rights review
    before considering generated ROMs as release assets. The host toolchain
    lock is not a fully hermetic build environment.
@@ -123,11 +127,7 @@ firmware image belongs in the Git repository.
    action-specific authorization and an independently established recovery
    process. Momiji remains excluded. For the private Momiji case, an owner
    review is required before any allowlisted public case export.
-5. After the private repository and CI are complete, the owner requested a
-   project thread on Maple Nekokami's Bluesky account, tagging the owner's
-   account, followed by a GitHub link to that thread. Keep the account
-   credential out of all files and logs. This is the final delivery step.
-6. The owner requested ASCII Maple Nekokami catgirl art for a future UEFI page
+5. The owner requested ASCII Maple Nekokami catgirl art for a future UEFI page
    only after the project is fully operational. No UEFI page or physical boot
    has been implemented, so this remains deferred.
 

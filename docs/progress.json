@@ -57,8 +57,8 @@
     {
       "id": 8,
       "name": "audit_and_private_push",
-      "status": "private_push_ci_passed",
-      "evidence": "Reviewed source commit ef70dd163e6cf0ff3ee671431987cc31c5c4ec37 pushed to private NoahWLono/amd-open-firmware; source checks run 35789774058 passed; Node.js 24 action pins updated locally and their CI run pending"
+      "status": "completed",
+      "evidence": "Private repository and branch pushed; source checks passed on ef70dd1 (run 35789774058) and Node.js 24 workflow update 391d6bc (run 35789999557); preserved private source cache and artifacts verified"
     }
   ],
   "future_requested_work": [
