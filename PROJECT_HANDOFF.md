@@ -15,12 +15,13 @@ sources, and one owner-supplied archive imported offline.
 ## Repository state
 
 - Checkout: `/home/noah/Documents/ChatGPT/MAPLEBOOT`.
-- Private GitHub repository: [NoahWLono/amd-open-firmware](https://github.com/NoahWLono/amd-open-firmware).
+- Public source repository: [NoahWLono/amd-open-firmware](https://github.com/NoahWLono/amd-open-firmware).
 - Branch: `codex/amd-open-firmware`.
 - Validated source commit: `ef70dd163e6cf0ff3ee671431987cc31c5c4ec37`,
   pushed to the branch and confirmed by `git ls-remote`. The Node.js 24 CI
   update was verified on `391d6bc6996e907739916c24bb157fdb9b934ec3`.
   The delivery handoff was verified on `f84c5e187f7886a0643af57acc53902af1934165`.
+  The announcement update was verified on `45c2f2b6c4ad7c598db39115922e3bd0ef20f8c7`.
   Resolve the current document commit with `git rev-parse HEAD`; this file
   cannot contain its own commit hash.
 - Progress ledger: [docs/progress.json](docs/progress.json). Source evidence
@@ -82,8 +83,8 @@ Python compile checks, and catalog validation passed; the catalog has 65
 targets and 62 evidence records. A source wheel built and installed in a fresh
 offline venv, and its installed `amd-fw catalog validate` command passed.
 All 19 Fish runbook code blocks passed `fish -n`. Both pinned source sets and
-the host toolchain lock verified. The final staged audit passed. The private
-GitHub push was verified. [Source checks run 35789774058](https://github.com/NoahWLono/amd-open-firmware/actions/runs/35789774058)
+the host toolchain lock verified. The final staged audit passed. The GitHub
+push was verified. [Source checks run 35789774058](https://github.com/NoahWLono/amd-open-firmware/actions/runs/35789774058)
 passed on commit `ef70dd1`, including format, lint, tests, catalog validation,
 and staged-content audit. GitHub emitted a warning that the original action
 pins target deprecated Node.js 20. The workflow now pins official Node.js 24
@@ -92,11 +93,17 @@ passed on commit `391d6bc`, including install, format, lint, tests, catalog
 validation, and staged-content audit.
 [Run 35790235207](https://github.com/NoahWLono/amd-open-firmware/actions/runs/35790235207)
 also passed on the delivery handoff commit `f84c5e1`.
+[Run 35790706131](https://github.com/NoahWLono/amd-open-firmware/actions/runs/35790706131)
+passed on the announcement commit `45c2f2b`. Before making the source
+repository public, the reachable Git history and Actions logs were checked
+for private material; the repository had no releases or uploaded build
+artifacts. Public visibility was confirmed through GitHub and an
+unauthenticated page request. ROM publication remains on hold.
 
 ## Announcement
 
-Maple Nekokami posted a [six-part Bluesky thread](https://bsky.app/profile/maple-nekokami.bsky.social/post/3mw5aev5nxl2e)
-about the project. All six posts, their reply chain, the owner's mention, and
+Maple Nekokami posted a [Bluesky thread](https://bsky.app/profile/maple-nekokami.bsky.social/post/3mw5aev5nxl2e)
+about the project. The initial six posts, their reply chain, the owner's mention, and
 the repository link were read back and verified through the account's public
 records. The GitHub README links that thread. Account credentials were not
 written to this repository or the private evidence directory.
@@ -136,8 +143,9 @@ firmware image belongs in the Git repository.
    process. Momiji remains excluded. For the private Momiji case, an owner
    review is required before any allowlisted public case export.
 4. The owner requested ASCII Maple Nekokami catgirl art for a future UEFI page
-   only after the project is fully operational. No UEFI page or physical boot
-   has been implemented, so this remains deferred.
+   after the engineering work. The 80-column by 25-row concept asset and its
+   browser preview are now in `assets/` and `docs/`. Integration into a UEFI
+   page and physical boot have not been implemented.
 
 ## Exact resume commands
 

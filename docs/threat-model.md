@@ -16,6 +16,6 @@ device passthrough. Public exports are allowlisted and require review.
 
 These controls do not prove firmware safety. A malicious upstream build system,
 compromised compiler, incorrectly classified binary input, or human decision
-to flash an untested artifact can still cause harm. Private repository
-visibility is a safeguard for this initial project, not a substitute for
-removing sensitive content from Git history.
+to flash an untested artifact can still cause harm. The repository was staged
+privately and made public after a full-history content review. Privacy still
+depends on excluding sensitive content from every future commit and artifact.

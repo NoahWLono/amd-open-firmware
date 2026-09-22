@@ -3,7 +3,7 @@
   "updated_on": "2026-09-22",
   "owner": "Noah Weinberger",
   "project": "LibreAMD research and build tooling",
-  "repository_visibility": "private_required",
+  "repository_visibility": "public_source_only",
   "hardware_boundary": "No physical firmware, SPI, EC, TPM, or platform-security access; Momiji survey-only",
   "phases": [
     {
@@ -46,7 +46,7 @@
       "id": 6,
       "name": "integrated_validation",
       "status": "completed_local",
-      "evidence": "Final local suite 81/81, Ruff format/lint, compileall, 65-target/62-evidence catalog, two final-recipe AMD repeatability checks, generic QEMU guest-signal smoke, and fresh wheel install passed; GitHub CI pending"
+      "evidence": "Final local suite 81/81, Ruff format/lint, compileall, 65-target/62-evidence catalog, two final-recipe AMD repeatability checks, generic QEMU guest-signal smoke, and fresh wheel install passed; GitHub source checks passed through commit 45c2f2b"
     },
     {
       "id": 7,
@@ -58,7 +58,13 @@
       "id": 8,
       "name": "audit_and_private_push",
       "status": "completed",
-      "evidence": "Private repository and branch pushed; source checks passed on ef70dd1 (run 35789774058) and Node.js 24 workflow update 391d6bc (run 35789999557); preserved private source cache and artifacts verified"
+      "evidence": "Initially private repository and branch pushed; source checks passed on ef70dd1 (run 35789774058), Node.js 24 workflow update 391d6bc (run 35789999557), delivery f84c5e1 (run 35790235207), and announcement 45c2f2b (run 35790706131); preserved private source cache and artifacts verified"
+    },
+    {
+      "id": 9,
+      "name": "public_source_release",
+      "status": "completed",
+      "evidence": "Full reachable history and Actions-log review passed; no release assets or uploaded build artifacts; GitHub reports PUBLIC and unauthenticated repository page returns HTTP 200. Generated ROMs and private survey evidence remain outside Git."
     }
   ],
   "future_requested_work": [
@@ -66,16 +72,18 @@
       "id": "maple-nekokami-uefi-art",
       "description": "ASCII Maple Nekokami catgirl art for a future UEFI page",
       "timing": "Only after engineering and delivery work is finished",
-      "status": "deferred"
+      "status": "concept_asset_completed",
+      "completed_on": "2026-09-22",
+      "evidence": "80-column by 25-row printable ASCII portrait and exact browser preview created; screenshot rendered for announcement. No UEFI integration or hardware boot claim."
     },
     {
       "id": "maple-nekokami-bluesky-announcement",
-      "description": "Post project thread in Maple Nekokami voice, tag owner, and link the thread on GitHub",
-      "timing": "Final delivery step after private repository and CI are complete",
+      "description": "Initial six-post project announcement in Maple Nekokami voice, with owner mention and GitHub link",
+      "timing": "Completed after the initial private repository and CI",
       "status": "completed",
       "completed_on": "2026-09-22",
       "thread_url": "https://bsky.app/profile/maple-nekokami.bsky.social/post/3mw5aev5nxl2e",
-      "verification": "Six public post records, reply chain, owner mention facet, and repository link facet verified; README includes thread link"
+      "verification": "Initial six public post records, reply chain, owner mention facet, and repository link facet verified; README includes thread link"
     }
   ]
 }

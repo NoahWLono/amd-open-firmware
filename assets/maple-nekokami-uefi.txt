@@ -1,0 +1,25 @@
++==============================================================================+
+|  LibreAMD  /  Mapleboot study                  |  Character screen concept   |
++------------------------------------------------+-----------------------------+
+|                                                |  MAPLE NEKOKAMI  uwu        |
+|            /\                   /\             |  ------------------------   |
+|           /  \_____.----._____/  \             |  Original ASCII portrait    |
+|          /  .----.  /  \  .----.  \            |  for a possible UEFI page.  |
+|         /  /     \_/    \_/     \  \           |                             |
+|        |  |  /  .-------.  \  |  |             |  Display                    |
+|        |  | |  /         \  | |  |             |  80 columns x 25 rows       |
+|        |  | |  .--.   .--.  | |  |             |  Printable ASCII only       |
+|        |  | |  |o |   | o|  | |  |             |                             |
+|        |  | |  '--'   ^ '--'  | |  |           |  State                      |
+|         \  \ |      \_/      | /  /            |  Design concept             |
+|          \  \   ._____.   /  /                 |  No booted firmware         |
+|           \__\  \_____/  /__/                  |  No hardware test           |
+|             /  \_________/  \                  |                             |
+|            /   _/|  / \  |\_   \               |  Project                    |
+|           /___/  | /___\ |  \___\              |  LibreAMD research tools    |
+|             |___| /_____\ |___|                |  Exact-board work only      |
+|                                                |                             |
++------------------------------------------------------------------------------+
+|  CONCEPT PREVIEW  /  No UEFI application or firmware boot is represented.    |
+|  Original portrait  |  Independent AMD open-firmware research                |
++==============================================================================+

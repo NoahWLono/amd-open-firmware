@@ -1,5 +1,9 @@
 # Initial implementation plan
 
+The initial delivery used a private repository. The source repository became
+public on 2026-09-22 after a history and Actions-log review; private inputs
+and generated firmware remain outside Git.
+
 The binding requirements are the owner-provided master project prompt. The
 work is split into independently testable components. This plan records the
 interfaces used in the first engineering pass; later evidence may narrow

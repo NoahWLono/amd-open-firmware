@@ -2,6 +2,11 @@
 
 LibreAMD is the working name for this independent AMD open-firmware research and build project owned by Noah Weinberger. The Python package provides an evidence-backed target catalog, offline survey and firmware-package inspection, and pinned coreboot recipes for exact boards. It does not claim that one image works on every AMD system or that a successful build will boot on a machine. The project is not affiliated with AMD, coreboot, Libreboot, or any board vendor.
 
+This source repository is public. It contains no raw machine survey, generated
+firmware image, vendor binary, or build log. Those materials have separate
+privacy and distribution requirements; public source access does not make a
+ROM eligible for release.
+
 | Coverage | Observed state |
 | --- | --- |
 | Catalog | 65 versioned target and research records; entries have distinct evidence and readiness levels. |
@@ -53,7 +58,13 @@ No normal command flashes firmware, reads a physical SPI chip, probes EC or SMBu
 
 ## Project announcement
 
-Maple Nekokami posted a [six-part Bluesky thread](https://bsky.app/profile/maple-nekokami.bsky.social/post/3mw5aev5nxl2e) about the verified build scope, the offline workbench, and the no-hardware boundary.
+Maple Nekokami posted a [Bluesky thread](https://bsky.app/profile/maple-nekokami.bsky.social/post/3mw5aev5nxl2e) about the verified build scope, the offline workbench, and the no-hardware boundary.
+
+An [80-column by 25-row ASCII Maple Nekokami concept screen](assets/maple-nekokami-uefi.txt)
+and its [standalone HTML preview file](docs/maple-nekokami-uefi-preview.html)
+show a possible future UEFI page. Open the HTML file locally to see the
+rendered screen. The artwork has not been integrated into firmware or booted
+on a physical board.
 
 ## Exit status
 
