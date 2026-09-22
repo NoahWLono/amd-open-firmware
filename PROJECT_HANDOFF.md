@@ -15,11 +15,12 @@ sources, and one owner-supplied archive imported offline.
 ## Repository state
 
 - Checkout: `/home/noah/Documents/ChatGPT/MAPLEBOOT`.
-- Intended private GitHub repository: `NoahWLono/amd-open-firmware`.
+- Private GitHub repository: [NoahWLono/amd-open-firmware](https://github.com/NoahWLono/amd-open-firmware).
 - Branch: `codex/amd-open-firmware`.
-- Current commit: resolve with `git rev-parse HEAD` after the first commit;
-  this file cannot contain its own commit hash. At this checkpoint, the
-  repository has no commit or remote.
+- Validated source commit: `ef70dd163e6cf0ff3ee671431987cc31c5c4ec37`,
+  pushed to the branch and confirmed by `git ls-remote`. Resolve the current
+  document commit with `git rev-parse HEAD`; this file cannot contain its own
+  commit hash.
 - Progress ledger: [docs/progress.json](docs/progress.json). Source evidence
   ledger: `src/amd_fw/data/evidence.json`. Observed build results are in
   [docs/build-validation.json](docs/build-validation.json).
@@ -79,8 +80,13 @@ Python compile checks, and catalog validation passed; the catalog has 65
 targets and 62 evidence records. A source wheel built and installed in a fresh
 offline venv, and its installed `amd-fw catalog validate` command passed.
 All 19 Fish runbook code blocks passed `fish -n`. Both pinned source sets and
-the host toolchain lock verified. The final staged audit, private GitHub push,
-and actual CI result remain pending at this checkpoint.
+the host toolchain lock verified. The final staged audit passed. The private
+GitHub push was verified. [Source checks run 35789774058](https://github.com/NoahWLono/amd-open-firmware/actions/runs/35789774058)
+passed on commit `ef70dd1`, including format, lint, tests, catalog validation,
+and staged-content audit. GitHub emitted a warning that the original action
+pins target deprecated Node.js 20. The workflow now pins official Node.js 24
+versions of checkout and setup-python. The updated workflow's CI run is
+pending at this checkpoint.
 
 ## Private evidence and publication boundary
 
@@ -105,9 +111,8 @@ firmware image belongs in the Git repository.
 
 ## Known gaps and next engineering steps
 
-1. Rerun the staged-content scan and privacy review against final staged blobs.
-   Commit coherent milestones, create the private GitHub
-   repository, push, and inspect the actual CI result.
+1. Commit the Node.js 24 action pins and this delivery handoff, push, and
+   inspect the resulting CI run.
 2. Complete a per-file component inventory and distribution-rights review
    before considering generated ROMs as release assets. The host toolchain
    lock is not a fully hermetic build environment.

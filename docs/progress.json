@@ -57,8 +57,8 @@
     {
       "id": 8,
       "name": "audit_and_private_push",
-      "status": "audit_passed_push_pending",
-      "evidence": "Initial staged scanner and privacy review passed; final staged scan, private push, and CI pending"
+      "status": "private_push_ci_passed",
+      "evidence": "Reviewed source commit ef70dd163e6cf0ff3ee671431987cc31c5c4ec37 pushed to private NoahWLono/amd-open-firmware; source checks run 35789774058 passed; Node.js 24 action pins updated locally and their CI run pending"
     }
   ],
   "future_requested_work": [
