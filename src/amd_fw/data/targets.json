@@ -1,0 +1,3032 @@
+{
+  "schema_version": 1,
+  "baseline": {
+    "project": "coreboot",
+    "repository": "https://github.com/coreboot/coreboot",
+    "tag": "26.06",
+    "commit": "5cbf8afc4c08949c9b4ee1cb9dc5439add8a937e",
+    "retrieved_on": "2026-09-22",
+    "selection_rule": "Mainboard Kconfig files selecting AMD SoC or AMD PI symbols, with Kconfig.name selectors; not a proof of hardware validation."
+  },
+  "targets": [
+    {
+      "id": "soc-stoneyridge",
+      "kind": "soc",
+      "name": "Stoney Ridge",
+      "manufacturer": "AMD",
+      "architecture": "x86_64",
+      "cpu_vendor": "AMD",
+      "upstream": {
+        "project": "coreboot",
+        "repository": "https://github.com/coreboot/coreboot",
+        "tag": "26.06",
+        "commit": "5cbf8afc4c08949c9b4ee1cb9dc5439add8a937e",
+        "soc_directory": "src/soc/amd/stoneyridge",
+        "kconfig_symbol": "SOC_AMD_STONEYRIDGE"
+      },
+      "silicon_initialization": "AMD silicon initialization path; opaque components are tracked separately",
+      "build": {
+        "supported": false,
+        "status": "cataloged"
+      },
+      "validation": {
+        "project_build": "not_performed",
+        "reproducibility": "not_performed",
+        "emulator": "not_performed",
+        "hardware": "not_performed"
+      },
+      "evidence_refs": [
+        "cb2606-soc-stoneyridge"
+      ],
+      "last_verified_on": "2026-09-22",
+      "notes": "SoC code presence alone does not identify a supported retail motherboard or physical board revision."
+    },
+    {
+      "id": "soc-picasso",
+      "kind": "soc",
+      "name": "Picasso",
+      "manufacturer": "AMD",
+      "architecture": "x86_64",
+      "cpu_vendor": "AMD",
+      "upstream": {
+        "project": "coreboot",
+        "repository": "https://github.com/coreboot/coreboot",
+        "tag": "26.06",
+        "commit": "5cbf8afc4c08949c9b4ee1cb9dc5439add8a937e",
+        "soc_directory": "src/soc/amd/picasso",
+        "kconfig_symbol": "SOC_AMD_PICASSO"
+      },
+      "silicon_initialization": "FSP-style binary silicon initialization",
+      "build": {
+        "supported": false,
+        "status": "cataloged"
+      },
+      "validation": {
+        "project_build": "not_performed",
+        "reproducibility": "not_performed",
+        "emulator": "not_performed",
+        "hardware": "not_performed"
+      },
+      "evidence_refs": [
+        "cb2606-soc-picasso"
+      ],
+      "last_verified_on": "2026-09-22",
+      "notes": "SoC code presence alone does not identify a supported retail motherboard or physical board revision."
+    },
+    {
+      "id": "soc-cezanne",
+      "kind": "soc",
+      "name": "Cezanne",
+      "manufacturer": "AMD",
+      "architecture": "x86_64",
+      "cpu_vendor": "AMD",
+      "upstream": {
+        "project": "coreboot",
+        "repository": "https://github.com/coreboot/coreboot",
+        "tag": "26.06",
+        "commit": "5cbf8afc4c08949c9b4ee1cb9dc5439add8a937e",
+        "soc_directory": "src/soc/amd/cezanne",
+        "kconfig_symbol": "SOC_AMD_CEZANNE"
+      },
+      "silicon_initialization": "FSP-style binary silicon initialization",
+      "build": {
+        "supported": false,
+        "status": "cataloged"
+      },
+      "validation": {
+        "project_build": "not_performed",
+        "reproducibility": "not_performed",
+        "emulator": "not_performed",
+        "hardware": "not_performed"
+      },
+      "evidence_refs": [
+        "cb2606-soc-cezanne"
+      ],
+      "last_verified_on": "2026-09-22",
+      "notes": "SoC code presence alone does not identify a supported retail motherboard or physical board revision."
+    },
+    {
+      "id": "soc-v2000a",
+      "kind": "soc",
+      "name": "V2000A",
+      "manufacturer": "AMD",
+      "architecture": "x86_64",
+      "cpu_vendor": "AMD",
+      "upstream": {
+        "project": "coreboot",
+        "repository": "https://github.com/coreboot/coreboot",
+        "tag": "26.06",
+        "commit": "5cbf8afc4c08949c9b4ee1cb9dc5439add8a937e",
+        "soc_directory": "src/soc/amd/cezanne",
+        "kconfig_symbol": "SOC_AMD_V2000A"
+      },
+      "silicon_initialization": "Cezanne-derived coreboot SoC variant; binary inputs require review",
+      "build": {
+        "supported": false,
+        "status": "cataloged"
+      },
+      "validation": {
+        "project_build": "not_performed",
+        "reproducibility": "not_performed",
+        "emulator": "not_performed",
+        "hardware": "not_performed"
+      },
+      "evidence_refs": [
+        "cb2606-soc-v2000a"
+      ],
+      "last_verified_on": "2026-09-22",
+      "notes": "SoC code presence alone does not identify a supported retail motherboard or physical board revision."
+    },
+    {
+      "id": "soc-mendocino",
+      "kind": "soc",
+      "name": "Mendocino",
+      "manufacturer": "AMD",
+      "architecture": "x86_64",
+      "cpu_vendor": "AMD",
+      "upstream": {
+        "project": "coreboot",
+        "repository": "https://github.com/coreboot/coreboot",
+        "tag": "26.06",
+        "commit": "5cbf8afc4c08949c9b4ee1cb9dc5439add8a937e",
+        "soc_directory": "src/soc/amd/mendocino",
+        "kconfig_symbol": "SOC_AMD_MENDOCINO"
+      },
+      "silicon_initialization": "AMD FSP-style silicon initialization",
+      "build": {
+        "supported": false,
+        "status": "cataloged"
+      },
+      "validation": {
+        "project_build": "not_performed",
+        "reproducibility": "not_performed",
+        "emulator": "not_performed",
+        "hardware": "not_performed"
+      },
+      "evidence_refs": [
+        "cb2606-soc-mendocino"
+      ],
+      "last_verified_on": "2026-09-22",
+      "notes": "SoC code presence alone does not identify a supported retail motherboard or physical board revision."
+    },
+    {
+      "id": "soc-phoenix-fsp",
+      "kind": "soc",
+      "name": "Phoenix FSP path",
+      "manufacturer": "AMD",
+      "architecture": "x86_64",
+      "cpu_vendor": "AMD",
+      "upstream": {
+        "project": "coreboot",
+        "repository": "https://github.com/coreboot/coreboot",
+        "tag": "26.06",
+        "commit": "5cbf8afc4c08949c9b4ee1cb9dc5439add8a937e",
+        "soc_directory": "src/soc/amd/phoenix",
+        "kconfig_symbol": "SOC_AMD_PHOENIX_FSP"
+      },
+      "silicon_initialization": "AMD FSP silicon initialization path",
+      "build": {
+        "supported": false,
+        "status": "cataloged"
+      },
+      "validation": {
+        "project_build": "not_performed",
+        "reproducibility": "not_performed",
+        "emulator": "not_performed",
+        "hardware": "not_performed"
+      },
+      "evidence_refs": [
+        "cb2606-soc-phoenix-fsp"
+      ],
+      "last_verified_on": "2026-09-22",
+      "notes": "SoC code presence alone does not identify a supported retail motherboard or physical board revision."
+    },
+    {
+      "id": "soc-phoenix-opensil",
+      "kind": "soc",
+      "name": "Phoenix openSIL path",
+      "manufacturer": "AMD",
+      "architecture": "x86_64",
+      "cpu_vendor": "AMD",
+      "upstream": {
+        "project": "coreboot",
+        "repository": "https://github.com/coreboot/coreboot",
+        "tag": "26.06",
+        "commit": "5cbf8afc4c08949c9b4ee1cb9dc5439add8a937e",
+        "soc_directory": "src/soc/amd/phoenix",
+        "kconfig_symbol": "SOC_AMD_PHOENIX_OPENSIL"
+      },
+      "silicon_initialization": "openSIL integration path; not evidence of fully open platform firmware",
+      "build": {
+        "supported": false,
+        "status": "cataloged"
+      },
+      "validation": {
+        "project_build": "not_performed",
+        "reproducibility": "not_performed",
+        "emulator": "not_performed",
+        "hardware": "not_performed"
+      },
+      "evidence_refs": [
+        "cb2606-soc-phoenix-opensil",
+        "opensil-poc-scope"
+      ],
+      "last_verified_on": "2026-09-22",
+      "notes": "SoC code presence alone does not identify a supported retail motherboard or physical board revision.",
+      "initialization_component": {
+        "name": "AMD openSIL",
+        "openness": "source_available_free_license",
+        "license": "MIT",
+        "scope": "silicon-initialization libraries; other platform components require separate accounting"
+      }
+    },
+    {
+      "id": "soc-glinda",
+      "kind": "soc",
+      "name": "Glinda",
+      "manufacturer": "AMD",
+      "architecture": "x86_64",
+      "cpu_vendor": "AMD",
+      "upstream": {
+        "project": "coreboot",
+        "repository": "https://github.com/coreboot/coreboot",
+        "tag": "26.06",
+        "commit": "5cbf8afc4c08949c9b4ee1cb9dc5439add8a937e",
+        "soc_directory": "src/soc/amd/glinda",
+        "kconfig_symbol": "SOC_AMD_GLINDA"
+      },
+      "silicon_initialization": "AMD FSP-style silicon initialization path",
+      "build": {
+        "supported": false,
+        "status": "cataloged"
+      },
+      "validation": {
+        "project_build": "not_performed",
+        "reproducibility": "not_performed",
+        "emulator": "not_performed",
+        "hardware": "not_performed"
+      },
+      "evidence_refs": [
+        "cb2606-soc-glinda"
+      ],
+      "last_verified_on": "2026-09-22",
+      "notes": "SoC code presence alone does not identify a supported retail motherboard or physical board revision."
+    },
+    {
+      "id": "soc-faegan",
+      "kind": "soc",
+      "name": "Faegan",
+      "manufacturer": "AMD",
+      "architecture": "x86_64",
+      "cpu_vendor": "AMD",
+      "upstream": {
+        "project": "coreboot",
+        "repository": "https://github.com/coreboot/coreboot",
+        "tag": "26.06",
+        "commit": "5cbf8afc4c08949c9b4ee1cb9dc5439add8a937e",
+        "soc_directory": "src/soc/amd/glinda",
+        "kconfig_symbol": "SOC_AMD_FAEGAN"
+      },
+      "silicon_initialization": "Glinda-derived coreboot SoC variant",
+      "build": {
+        "supported": false,
+        "status": "cataloged"
+      },
+      "validation": {
+        "project_build": "not_performed",
+        "reproducibility": "not_performed",
+        "emulator": "not_performed",
+        "hardware": "not_performed"
+      },
+      "evidence_refs": [
+        "cb2606-soc-faegan"
+      ],
+      "last_verified_on": "2026-09-22",
+      "notes": "SoC code presence alone does not identify a supported retail motherboard or physical board revision."
+    },
+    {
+      "id": "soc-strix-halo",
+      "kind": "soc",
+      "name": "Strix Halo",
+      "manufacturer": "AMD",
+      "architecture": "x86_64",
+      "cpu_vendor": "AMD",
+      "upstream": {
+        "project": "coreboot",
+        "repository": "https://github.com/coreboot/coreboot",
+        "tag": "26.06",
+        "commit": "5cbf8afc4c08949c9b4ee1cb9dc5439add8a937e",
+        "soc_directory": "src/soc/amd/strix_halo",
+        "kconfig_symbol": "SOC_AMD_STRIX_HALO"
+      },
+      "silicon_initialization": "AMD FSP-style silicon initialization path",
+      "build": {
+        "supported": false,
+        "status": "cataloged"
+      },
+      "validation": {
+        "project_build": "not_performed",
+        "reproducibility": "not_performed",
+        "emulator": "not_performed",
+        "hardware": "not_performed"
+      },
+      "evidence_refs": [
+        "cb2606-soc-strix-halo"
+      ],
+      "last_verified_on": "2026-09-22",
+      "notes": "SoC code presence alone does not identify a supported retail motherboard or physical board revision."
+    },
+    {
+      "id": "soc-genoa-poc",
+      "kind": "soc",
+      "name": "Genoa proof of concept",
+      "manufacturer": "AMD",
+      "architecture": "x86_64",
+      "cpu_vendor": "AMD",
+      "upstream": {
+        "project": "coreboot",
+        "repository": "https://github.com/coreboot/coreboot",
+        "tag": "26.06",
+        "commit": "5cbf8afc4c08949c9b4ee1cb9dc5439add8a937e",
+        "soc_directory": "src/soc/amd/genoa_poc",
+        "kconfig_symbol": "SOC_AMD_GENOA_POC"
+      },
+      "silicon_initialization": "openSIL proof-of-concept path",
+      "build": {
+        "supported": false,
+        "status": "cataloged"
+      },
+      "validation": {
+        "project_build": "not_performed",
+        "reproducibility": "not_performed",
+        "emulator": "not_performed",
+        "hardware": "not_performed"
+      },
+      "evidence_refs": [
+        "cb2606-soc-genoa-poc",
+        "opensil-poc-scope"
+      ],
+      "last_verified_on": "2026-09-22",
+      "notes": "SoC code presence alone does not identify a supported retail motherboard or physical board revision.",
+      "initialization_component": {
+        "name": "AMD openSIL",
+        "openness": "source_available_free_license",
+        "license": "MIT",
+        "scope": "silicon-initialization libraries; other platform components require separate accounting"
+      }
+    },
+    {
+      "id": "soc-turin-poc",
+      "kind": "soc",
+      "name": "Turin proof of concept",
+      "manufacturer": "AMD",
+      "architecture": "x86_64",
+      "cpu_vendor": "AMD",
+      "upstream": {
+        "project": "coreboot",
+        "repository": "https://github.com/coreboot/coreboot",
+        "tag": "26.06",
+        "commit": "5cbf8afc4c08949c9b4ee1cb9dc5439add8a937e",
+        "soc_directory": "src/soc/amd/turin_poc",
+        "kconfig_symbol": "SOC_AMD_TURIN_POC"
+      },
+      "silicon_initialization": "openSIL proof-of-concept SoC path; no exact mainboard in this inventory",
+      "build": {
+        "supported": false,
+        "status": "cataloged"
+      },
+      "validation": {
+        "project_build": "not_performed",
+        "reproducibility": "not_performed",
+        "emulator": "not_performed",
+        "hardware": "not_performed"
+      },
+      "evidence_refs": [
+        "cb2606-soc-turin-poc",
+        "opensil-poc-scope"
+      ],
+      "last_verified_on": "2026-09-22",
+      "notes": "SoC code presence alone does not identify a supported retail motherboard or physical board revision.",
+      "initialization_component": {
+        "name": "AMD openSIL",
+        "openness": "source_available_free_license",
+        "license": "MIT",
+        "scope": "silicon-initialization libraries; other platform components require separate accounting"
+      }
+    },
+    {
+      "id": "amd-bilby",
+      "kind": "board",
+      "name": "Bilby",
+      "manufacturer": "AMD",
+      "architecture": "x86_64",
+      "cpu_vendor": "AMD",
+      "relationships": {
+        "soc_ids": [
+          "soc-picasso"
+        ]
+      },
+      "upstream": {
+        "project": "coreboot",
+        "repository": "https://github.com/coreboot/coreboot",
+        "tag": "26.06",
+        "commit": "5cbf8afc4c08949c9b4ee1cb9dc5439add8a937e",
+        "mainboard": "amd/bilby",
+        "kconfig_symbol": "BOARD_AMD_BILBY",
+        "source_paths": [
+          "src/mainboard/amd/bilby/Kconfig",
+          "src/mainboard/amd/bilby/Kconfig.name"
+        ]
+      },
+      "board_revision_constraints": "Not established by the cited Kconfig target; confirm exact physical revision before any future hardware claim.",
+      "build": {
+        "supported": false,
+        "status": "upstream-target-identified",
+        "recipe_id": null,
+        "input_audit": "not_completed"
+      },
+      "validation": {
+        "project_build": "not_performed",
+        "reproducibility": "not_performed",
+        "emulator": "not_performed",
+        "hardware": "not_performed",
+        "external_hardware": "not_assessed"
+      },
+      "evidence_refs": [
+        "cb2606-board-names-amd-bilby",
+        "cb2606-board-config-amd-bilby"
+      ],
+      "last_verified_on": "2026-09-22",
+      "notes": "The upstream target exists at the pinned revision. This project has not yet implemented or exercised its build recipe."
+    },
+    {
+      "id": "amd-birman-phoenix-fsp",
+      "kind": "board",
+      "name": "Birman for Phoenix SoC using FSP",
+      "manufacturer": "AMD",
+      "architecture": "x86_64",
+      "cpu_vendor": "AMD",
+      "relationships": {
+        "soc_ids": [
+          "soc-phoenix-fsp"
+        ]
+      },
+      "upstream": {
+        "project": "coreboot",
+        "repository": "https://github.com/coreboot/coreboot",
+        "tag": "26.06",
+        "commit": "5cbf8afc4c08949c9b4ee1cb9dc5439add8a937e",
+        "mainboard": "amd/birman",
+        "kconfig_symbol": "BOARD_AMD_BIRMAN_PHOENIX_FSP",
+        "source_paths": [
+          "src/mainboard/amd/birman/Kconfig",
+          "src/mainboard/amd/birman/Kconfig.name"
+        ]
+      },
+      "board_revision_constraints": "Not established by the cited Kconfig target; confirm exact physical revision before any future hardware claim.",
+      "build": {
+        "supported": false,
+        "status": "upstream-target-identified",
+        "recipe_id": null,
+        "input_audit": "not_completed"
+      },
+      "validation": {
+        "project_build": "not_performed",
+        "reproducibility": "not_performed",
+        "emulator": "not_performed",
+        "hardware": "not_performed",
+        "external_hardware": "not_assessed"
+      },
+      "evidence_refs": [
+        "cb2606-board-names-amd-birman",
+        "cb2606-board-config-amd-birman"
+      ],
+      "last_verified_on": "2026-09-22",
+      "notes": "The upstream target exists at the pinned revision. This project has not yet implemented or exercised its build recipe."
+    },
+    {
+      "id": "amd-birman-phoenix-opensil",
+      "kind": "board",
+      "name": "Birman for Phoenix SoC using openSIL",
+      "manufacturer": "AMD",
+      "architecture": "x86_64",
+      "cpu_vendor": "AMD",
+      "relationships": {
+        "soc_ids": [
+          "soc-phoenix-opensil"
+        ]
+      },
+      "upstream": {
+        "project": "coreboot",
+        "repository": "https://github.com/coreboot/coreboot",
+        "tag": "26.06",
+        "commit": "5cbf8afc4c08949c9b4ee1cb9dc5439add8a937e",
+        "mainboard": "amd/birman",
+        "kconfig_symbol": "BOARD_AMD_BIRMAN_PHOENIX_OPENSIL",
+        "source_paths": [
+          "src/mainboard/amd/birman/Kconfig",
+          "src/mainboard/amd/birman/Kconfig.name"
+        ]
+      },
+      "board_revision_constraints": "Not established by the cited Kconfig target; confirm exact physical revision before any future hardware claim.",
+      "build": {
+        "supported": false,
+        "status": "upstream-target-identified",
+        "recipe_id": null,
+        "input_audit": "not_completed"
+      },
+      "validation": {
+        "project_build": "not_performed",
+        "reproducibility": "not_performed",
+        "emulator": "not_performed",
+        "hardware": "not_performed",
+        "external_hardware": "not_assessed"
+      },
+      "evidence_refs": [
+        "cb2606-board-names-amd-birman",
+        "cb2606-board-config-amd-birman",
+        "opensil-poc-scope"
+      ],
+      "last_verified_on": "2026-09-22",
+      "notes": "The upstream target exists at the pinned revision. This project has not yet implemented or exercised its build recipe."
+    },
+    {
+      "id": "amd-birman-glinda",
+      "kind": "board",
+      "name": "Birman for Glinda SoC",
+      "manufacturer": "AMD",
+      "architecture": "x86_64",
+      "cpu_vendor": "AMD",
+      "relationships": {
+        "soc_ids": [
+          "soc-glinda"
+        ]
+      },
+      "upstream": {
+        "project": "coreboot",
+        "repository": "https://github.com/coreboot/coreboot",
+        "tag": "26.06",
+        "commit": "5cbf8afc4c08949c9b4ee1cb9dc5439add8a937e",
+        "mainboard": "amd/birman",
+        "kconfig_symbol": "BOARD_AMD_BIRMAN_GLINDA",
+        "source_paths": [
+          "src/mainboard/amd/birman/Kconfig",
+          "src/mainboard/amd/birman/Kconfig.name"
+        ]
+      },
+      "board_revision_constraints": "Not established by the cited Kconfig target; confirm exact physical revision before any future hardware claim.",
+      "build": {
+        "supported": false,
+        "status": "upstream-target-identified",
+        "recipe_id": null,
+        "input_audit": "not_completed"
+      },
+      "validation": {
+        "project_build": "not_performed",
+        "reproducibility": "not_performed",
+        "emulator": "not_performed",
+        "hardware": "not_performed",
+        "external_hardware": "not_assessed"
+      },
+      "evidence_refs": [
+        "cb2606-board-names-amd-birman",
+        "cb2606-board-config-amd-birman"
+      ],
+      "last_verified_on": "2026-09-22",
+      "notes": "The upstream target exists at the pinned revision. This project has not yet implemented or exercised its build recipe."
+    },
+    {
+      "id": "amd-birmanplus-phoenix",
+      "kind": "board",
+      "name": "BirmanPlus for Phoenix SoC",
+      "manufacturer": "AMD",
+      "architecture": "x86_64",
+      "cpu_vendor": "AMD",
+      "relationships": {
+        "soc_ids": [
+          "soc-phoenix-fsp"
+        ]
+      },
+      "upstream": {
+        "project": "coreboot",
+        "repository": "https://github.com/coreboot/coreboot",
+        "tag": "26.06",
+        "commit": "5cbf8afc4c08949c9b4ee1cb9dc5439add8a937e",
+        "mainboard": "amd/birman_plus",
+        "kconfig_symbol": "BOARD_AMD_BIRMANPLUS_PHOENIX",
+        "source_paths": [
+          "src/mainboard/amd/birman_plus/Kconfig",
+          "src/mainboard/amd/birman_plus/Kconfig.name"
+        ]
+      },
+      "board_revision_constraints": "Not established by the cited Kconfig target; confirm exact physical revision before any future hardware claim.",
+      "build": {
+        "supported": false,
+        "status": "upstream-target-identified",
+        "recipe_id": null,
+        "input_audit": "not_completed"
+      },
+      "validation": {
+        "project_build": "not_performed",
+        "reproducibility": "not_performed",
+        "emulator": "not_performed",
+        "hardware": "not_performed",
+        "external_hardware": "not_assessed"
+      },
+      "evidence_refs": [
+        "cb2606-board-names-amd-birman-plus",
+        "cb2606-board-config-amd-birman-plus"
+      ],
+      "last_verified_on": "2026-09-22",
+      "notes": "The upstream target exists at the pinned revision. This project has not yet implemented or exercised its build recipe."
+    },
+    {
+      "id": "amd-birmanplus-glinda",
+      "kind": "board",
+      "name": "BirmanPlus for Glinda SoC",
+      "manufacturer": "AMD",
+      "architecture": "x86_64",
+      "cpu_vendor": "AMD",
+      "relationships": {
+        "soc_ids": [
+          "soc-glinda"
+        ]
+      },
+      "upstream": {
+        "project": "coreboot",
+        "repository": "https://github.com/coreboot/coreboot",
+        "tag": "26.06",
+        "commit": "5cbf8afc4c08949c9b4ee1cb9dc5439add8a937e",
+        "mainboard": "amd/birman_plus",
+        "kconfig_symbol": "BOARD_AMD_BIRMANPLUS_GLINDA",
+        "source_paths": [
+          "src/mainboard/amd/birman_plus/Kconfig",
+          "src/mainboard/amd/birman_plus/Kconfig.name"
+        ]
+      },
+      "board_revision_constraints": "Not established by the cited Kconfig target; confirm exact physical revision before any future hardware claim.",
+      "build": {
+        "supported": false,
+        "status": "upstream-target-identified",
+        "recipe_id": null,
+        "input_audit": "not_completed"
+      },
+      "validation": {
+        "project_build": "not_performed",
+        "reproducibility": "not_performed",
+        "emulator": "not_performed",
+        "hardware": "not_performed",
+        "external_hardware": "not_assessed"
+      },
+      "evidence_refs": [
+        "cb2606-board-names-amd-birman-plus",
+        "cb2606-board-config-amd-birman-plus"
+      ],
+      "last_verified_on": "2026-09-22",
+      "notes": "The upstream target exists at the pinned revision. This project has not yet implemented or exercised its build recipe."
+    },
+    {
+      "id": "amd-chausie",
+      "kind": "board",
+      "name": "Chausie",
+      "manufacturer": "AMD",
+      "architecture": "x86_64",
+      "cpu_vendor": "AMD",
+      "relationships": {
+        "soc_ids": [
+          "soc-mendocino"
+        ]
+      },
+      "upstream": {
+        "project": "coreboot",
+        "repository": "https://github.com/coreboot/coreboot",
+        "tag": "26.06",
+        "commit": "5cbf8afc4c08949c9b4ee1cb9dc5439add8a937e",
+        "mainboard": "amd/chausie",
+        "kconfig_symbol": "BOARD_AMD_CHAUSIE",
+        "source_paths": [
+          "src/mainboard/amd/chausie/Kconfig",
+          "src/mainboard/amd/chausie/Kconfig.name"
+        ]
+      },
+      "board_revision_constraints": "Not established by the cited Kconfig target; confirm exact physical revision before any future hardware claim.",
+      "build": {
+        "supported": false,
+        "status": "upstream-target-identified",
+        "recipe_id": null,
+        "input_audit": "not_completed"
+      },
+      "validation": {
+        "project_build": "not_performed",
+        "reproducibility": "not_performed",
+        "emulator": "not_performed",
+        "hardware": "not_performed",
+        "external_hardware": "not_assessed"
+      },
+      "evidence_refs": [
+        "cb2606-board-names-amd-chausie",
+        "cb2606-board-config-amd-chausie"
+      ],
+      "last_verified_on": "2026-09-22",
+      "notes": "The upstream target exists at the pinned revision. This project has not yet implemented or exercised its build recipe."
+    },
+    {
+      "id": "amd-crater",
+      "kind": "board",
+      "name": "Crater for V2000A SoC",
+      "manufacturer": "AMD",
+      "architecture": "x86_64",
+      "cpu_vendor": "AMD",
+      "relationships": {
+        "soc_ids": [
+          "soc-v2000a"
+        ]
+      },
+      "upstream": {
+        "project": "coreboot",
+        "repository": "https://github.com/coreboot/coreboot",
+        "tag": "26.06",
+        "commit": "5cbf8afc4c08949c9b4ee1cb9dc5439add8a937e",
+        "mainboard": "amd/crater",
+        "kconfig_symbol": "BOARD_AMD_CRATER",
+        "source_paths": [
+          "src/mainboard/amd/crater/Kconfig",
+          "src/mainboard/amd/crater/Kconfig.name"
+        ]
+      },
+      "board_revision_constraints": "Not established by the cited Kconfig target; confirm exact physical revision before any future hardware claim.",
+      "build": {
+        "supported": false,
+        "status": "upstream-target-identified",
+        "recipe_id": null,
+        "input_audit": "not_completed"
+      },
+      "validation": {
+        "project_build": "not_performed",
+        "reproducibility": "not_performed",
+        "emulator": "not_performed",
+        "hardware": "not_performed",
+        "external_hardware": "not_assessed"
+      },
+      "evidence_refs": [
+        "cb2606-board-names-amd-crater",
+        "cb2606-board-config-amd-crater"
+      ],
+      "last_verified_on": "2026-09-22",
+      "notes": "The upstream target exists at the pinned revision. This project has not yet implemented or exercised its build recipe."
+    },
+    {
+      "id": "amd-gardenia",
+      "kind": "board",
+      "name": "Gardenia",
+      "manufacturer": "AMD",
+      "architecture": "x86_64",
+      "cpu_vendor": "AMD",
+      "relationships": {
+        "soc_ids": [
+          "soc-stoneyridge"
+        ]
+      },
+      "upstream": {
+        "project": "coreboot",
+        "repository": "https://github.com/coreboot/coreboot",
+        "tag": "26.06",
+        "commit": "5cbf8afc4c08949c9b4ee1cb9dc5439add8a937e",
+        "mainboard": "amd/gardenia",
+        "kconfig_symbol": "BOARD_AMD_GARDENIA",
+        "source_paths": [
+          "src/mainboard/amd/gardenia/Kconfig",
+          "src/mainboard/amd/gardenia/Kconfig.name"
+        ]
+      },
+      "board_revision_constraints": "Not established by the cited Kconfig target; confirm exact physical revision before any future hardware claim.",
+      "build": {
+        "supported": false,
+        "status": "upstream-target-identified",
+        "recipe_id": null,
+        "input_audit": "not_completed"
+      },
+      "validation": {
+        "project_build": "not_performed",
+        "reproducibility": "not_performed",
+        "emulator": "not_performed",
+        "hardware": "not_performed",
+        "external_hardware": "not_assessed"
+      },
+      "evidence_refs": [
+        "cb2606-board-names-amd-gardenia",
+        "cb2606-board-config-amd-gardenia"
+      ],
+      "last_verified_on": "2026-09-22",
+      "notes": "The upstream target exists at the pinned revision. This project has not yet implemented or exercised its build recipe."
+    },
+    {
+      "id": "amd-jaguar",
+      "kind": "board",
+      "name": "Jaguar for Faegan SoC",
+      "manufacturer": "AMD",
+      "architecture": "x86_64",
+      "cpu_vendor": "AMD",
+      "relationships": {
+        "soc_ids": [
+          "soc-faegan"
+        ]
+      },
+      "upstream": {
+        "project": "coreboot",
+        "repository": "https://github.com/coreboot/coreboot",
+        "tag": "26.06",
+        "commit": "5cbf8afc4c08949c9b4ee1cb9dc5439add8a937e",
+        "mainboard": "amd/jaguar",
+        "kconfig_symbol": "BOARD_AMD_JAGUAR",
+        "source_paths": [
+          "src/mainboard/amd/jaguar/Kconfig",
+          "src/mainboard/amd/jaguar/Kconfig.name"
+        ]
+      },
+      "board_revision_constraints": "Not established by the cited Kconfig target; confirm exact physical revision before any future hardware claim.",
+      "build": {
+        "supported": false,
+        "status": "upstream-target-identified",
+        "recipe_id": null,
+        "input_audit": "not_completed"
+      },
+      "validation": {
+        "project_build": "not_performed",
+        "reproducibility": "not_performed",
+        "emulator": "not_performed",
+        "hardware": "not_performed",
+        "external_hardware": "not_assessed"
+      },
+      "evidence_refs": [
+        "cb2606-board-names-amd-jaguar",
+        "cb2606-board-config-amd-jaguar"
+      ],
+      "last_verified_on": "2026-09-22",
+      "notes": "The upstream target exists at the pinned revision. This project has not yet implemented or exercised its build recipe."
+    },
+    {
+      "id": "amd-majolica",
+      "kind": "board",
+      "name": "Majolica",
+      "manufacturer": "AMD",
+      "architecture": "x86_64",
+      "cpu_vendor": "AMD",
+      "relationships": {
+        "soc_ids": [
+          "soc-cezanne"
+        ]
+      },
+      "upstream": {
+        "project": "coreboot",
+        "repository": "https://github.com/coreboot/coreboot",
+        "tag": "26.06",
+        "commit": "5cbf8afc4c08949c9b4ee1cb9dc5439add8a937e",
+        "mainboard": "amd/majolica",
+        "kconfig_symbol": "BOARD_AMD_MAJOLICA",
+        "source_paths": [
+          "src/mainboard/amd/majolica/Kconfig",
+          "src/mainboard/amd/majolica/Kconfig.name"
+        ]
+      },
+      "board_revision_constraints": "Not established by the cited Kconfig target; confirm exact physical revision before any future hardware claim.",
+      "build": {
+        "supported": false,
+        "status": "upstream-target-identified",
+        "recipe_id": null,
+        "input_audit": "not_completed"
+      },
+      "validation": {
+        "project_build": "not_performed",
+        "reproducibility": "not_performed",
+        "emulator": "not_performed",
+        "hardware": "not_performed",
+        "external_hardware": "not_assessed"
+      },
+      "evidence_refs": [
+        "cb2606-board-names-amd-majolica",
+        "cb2606-board-config-amd-majolica"
+      ],
+      "last_verified_on": "2026-09-22",
+      "notes": "The upstream target exists at the pinned revision. This project has not yet implemented or exercised its build recipe.",
+      "dependencies": [
+        {
+          "component": "AMD PSP firmware",
+          "domain": "security_processor",
+          "openness": "binary_only_licensing_unresolved",
+          "required": null,
+          "requirement_status": "requires_recipe_audit"
+        },
+        {
+          "component": "AMD FSP-M and FSP-S",
+          "domain": "silicon_initialization",
+          "openness": "binary_only_licensing_unresolved",
+          "required": null,
+          "requirement_status": "requires_recipe_audit"
+        }
+      ]
+    },
+    {
+      "id": "amd-mandolin",
+      "kind": "board",
+      "name": "Mandolin",
+      "manufacturer": "AMD",
+      "architecture": "x86_64",
+      "cpu_vendor": "AMD",
+      "relationships": {
+        "soc_ids": [
+          "soc-picasso"
+        ]
+      },
+      "upstream": {
+        "project": "coreboot",
+        "repository": "https://github.com/coreboot/coreboot",
+        "tag": "26.06",
+        "commit": "5cbf8afc4c08949c9b4ee1cb9dc5439add8a937e",
+        "mainboard": "amd/mandolin",
+        "kconfig_symbol": "BOARD_AMD_MANDOLIN",
+        "source_paths": [
+          "src/mainboard/amd/mandolin/Kconfig",
+          "src/mainboard/amd/mandolin/Kconfig.name"
+        ]
+      },
+      "board_revision_constraints": "Not established by the cited Kconfig target; confirm exact physical revision before any future hardware claim.",
+      "build": {
+        "supported": false,
+        "status": "upstream-target-identified",
+        "recipe_id": null,
+        "input_audit": "not_completed"
+      },
+      "validation": {
+        "project_build": "not_performed",
+        "reproducibility": "not_performed",
+        "emulator": "not_performed",
+        "hardware": "not_performed",
+        "external_hardware": "not_assessed"
+      },
+      "evidence_refs": [
+        "cb2606-board-names-amd-mandolin",
+        "cb2606-board-config-amd-mandolin"
+      ],
+      "last_verified_on": "2026-09-22",
+      "notes": "The upstream target exists at the pinned revision. This project has not yet implemented or exercised its build recipe.",
+      "dependencies": [
+        {
+          "component": "AMD PSP firmware",
+          "domain": "security_processor",
+          "openness": "binary_only_licensing_unresolved",
+          "required": null,
+          "requirement_status": "requires_recipe_audit"
+        },
+        {
+          "component": "AMD FSP or AGESA initialization",
+          "domain": "silicon_initialization",
+          "openness": "binary_only_licensing_unresolved",
+          "required": null,
+          "requirement_status": "requires_recipe_audit"
+        }
+      ]
+    },
+    {
+      "id": "amd-cereme",
+      "kind": "board",
+      "name": "Cereme",
+      "manufacturer": "AMD",
+      "architecture": "x86_64",
+      "cpu_vendor": "AMD",
+      "relationships": {
+        "soc_ids": [
+          "soc-picasso"
+        ]
+      },
+      "upstream": {
+        "project": "coreboot",
+        "repository": "https://github.com/coreboot/coreboot",
+        "tag": "26.06",
+        "commit": "5cbf8afc4c08949c9b4ee1cb9dc5439add8a937e",
+        "mainboard": "amd/mandolin",
+        "kconfig_symbol": "BOARD_AMD_CEREME",
+        "source_paths": [
+          "src/mainboard/amd/mandolin/Kconfig",
+          "src/mainboard/amd/mandolin/Kconfig.name"
+        ]
+      },
+      "board_revision_constraints": "Not established by the cited Kconfig target; confirm exact physical revision before any future hardware claim.",
+      "build": {
+        "supported": false,
+        "status": "upstream-target-identified",
+        "recipe_id": null,
+        "input_audit": "not_completed"
+      },
+      "validation": {
+        "project_build": "not_performed",
+        "reproducibility": "not_performed",
+        "emulator": "not_performed",
+        "hardware": "not_performed",
+        "external_hardware": "not_assessed"
+      },
+      "evidence_refs": [
+        "cb2606-board-names-amd-mandolin",
+        "cb2606-board-config-amd-mandolin"
+      ],
+      "last_verified_on": "2026-09-22",
+      "notes": "The upstream target exists at the pinned revision. This project has not yet implemented or exercised its build recipe.",
+      "dependencies": [
+        {
+          "component": "AMD PSP firmware",
+          "domain": "security_processor",
+          "openness": "binary_only_licensing_unresolved",
+          "required": "requires_recipe_audit"
+        },
+        {
+          "component": "AMD FSP or AGESA initialization",
+          "domain": "silicon_initialization",
+          "openness": "binary_only_licensing_unresolved",
+          "required": "requires_recipe_audit"
+        }
+      ]
+    },
+    {
+      "id": "amd-maple-strix-halo",
+      "kind": "board",
+      "name": "Maple for Strix Halo SoC",
+      "manufacturer": "AMD",
+      "architecture": "x86_64",
+      "cpu_vendor": "AMD",
+      "relationships": {
+        "soc_ids": [
+          "soc-strix-halo"
+        ]
+      },
+      "upstream": {
+        "project": "coreboot",
+        "repository": "https://github.com/coreboot/coreboot",
+        "tag": "26.06",
+        "commit": "5cbf8afc4c08949c9b4ee1cb9dc5439add8a937e",
+        "mainboard": "amd/maple",
+        "kconfig_symbol": "BOARD_AMD_MAPLE_STRIX_HALO",
+        "source_paths": [
+          "src/mainboard/amd/maple/Kconfig",
+          "src/mainboard/amd/maple/Kconfig.name"
+        ]
+      },
+      "board_revision_constraints": "Not established by the cited Kconfig target; confirm exact physical revision before any future hardware claim.",
+      "build": {
+        "supported": false,
+        "status": "upstream-target-identified",
+        "recipe_id": null,
+        "input_audit": "not_completed"
+      },
+      "validation": {
+        "project_build": "not_performed",
+        "reproducibility": "not_performed",
+        "emulator": "not_performed",
+        "hardware": "not_performed",
+        "external_hardware": "not_assessed"
+      },
+      "evidence_refs": [
+        "cb2606-board-names-amd-maple",
+        "cb2606-board-config-amd-maple"
+      ],
+      "last_verified_on": "2026-09-22",
+      "notes": "The upstream target exists at the pinned revision. This project has not yet implemented or exercised its build recipe."
+    },
+    {
+      "id": "amd-mayan-phoenix",
+      "kind": "board",
+      "name": "Mayan for Phoenix SoC",
+      "manufacturer": "AMD",
+      "architecture": "x86_64",
+      "cpu_vendor": "AMD",
+      "relationships": {
+        "soc_ids": [
+          "soc-phoenix-fsp"
+        ]
+      },
+      "upstream": {
+        "project": "coreboot",
+        "repository": "https://github.com/coreboot/coreboot",
+        "tag": "26.06",
+        "commit": "5cbf8afc4c08949c9b4ee1cb9dc5439add8a937e",
+        "mainboard": "amd/mayan",
+        "kconfig_symbol": "BOARD_AMD_MAYAN_PHOENIX",
+        "source_paths": [
+          "src/mainboard/amd/mayan/Kconfig",
+          "src/mainboard/amd/mayan/Kconfig.name"
+        ]
+      },
+      "board_revision_constraints": "Not established by the cited Kconfig target; confirm exact physical revision before any future hardware claim.",
+      "build": {
+        "supported": false,
+        "status": "upstream-target-identified",
+        "recipe_id": null,
+        "input_audit": "not_completed"
+      },
+      "validation": {
+        "project_build": "not_performed",
+        "reproducibility": "not_performed",
+        "emulator": "not_performed",
+        "hardware": "not_performed",
+        "external_hardware": "not_assessed"
+      },
+      "evidence_refs": [
+        "cb2606-board-names-amd-mayan",
+        "cb2606-board-config-amd-mayan"
+      ],
+      "last_verified_on": "2026-09-22",
+      "notes": "The upstream target exists at the pinned revision. This project has not yet implemented or exercised its build recipe."
+    },
+    {
+      "id": "amd-onyx-poc",
+      "kind": "board",
+      "name": "Onyx_poc",
+      "manufacturer": "AMD",
+      "architecture": "x86_64",
+      "cpu_vendor": "AMD",
+      "relationships": {
+        "soc_ids": [
+          "soc-genoa-poc"
+        ]
+      },
+      "upstream": {
+        "project": "coreboot",
+        "repository": "https://github.com/coreboot/coreboot",
+        "tag": "26.06",
+        "commit": "5cbf8afc4c08949c9b4ee1cb9dc5439add8a937e",
+        "mainboard": "amd/onyx_poc",
+        "kconfig_symbol": "BOARD_AMD_ONYX_POC",
+        "source_paths": [
+          "src/mainboard/amd/onyx_poc/Kconfig",
+          "src/mainboard/amd/onyx_poc/Kconfig.name"
+        ]
+      },
+      "board_revision_constraints": "Not established by the cited Kconfig target; confirm exact physical revision before any future hardware claim.",
+      "build": {
+        "supported": false,
+        "status": "upstream-target-identified",
+        "recipe_id": null,
+        "input_audit": "not_completed"
+      },
+      "validation": {
+        "project_build": "not_performed",
+        "reproducibility": "not_performed",
+        "emulator": "not_performed",
+        "hardware": "not_performed",
+        "external_hardware": "not_assessed"
+      },
+      "evidence_refs": [
+        "cb2606-board-names-amd-onyx-poc",
+        "cb2606-board-config-amd-onyx-poc",
+        "opensil-poc-scope"
+      ],
+      "last_verified_on": "2026-09-22",
+      "notes": "The upstream target exists at the pinned revision. This project has not yet implemented or exercised its build recipe."
+    },
+    {
+      "id": "amd-pademelon",
+      "kind": "board",
+      "name": "Pademelon",
+      "manufacturer": "AMD",
+      "architecture": "x86_64",
+      "cpu_vendor": "AMD",
+      "relationships": {
+        "soc_ids": [
+          "soc-stoneyridge"
+        ]
+      },
+      "upstream": {
+        "project": "coreboot",
+        "repository": "https://github.com/coreboot/coreboot",
+        "tag": "26.06",
+        "commit": "5cbf8afc4c08949c9b4ee1cb9dc5439add8a937e",
+        "mainboard": "amd/pademelon",
+        "kconfig_symbol": "BOARD_AMD_PADEMELON",
+        "source_paths": [
+          "src/mainboard/amd/pademelon/Kconfig",
+          "src/mainboard/amd/pademelon/Kconfig.name"
+        ]
+      },
+      "board_revision_constraints": "Not established by the cited Kconfig target; confirm exact physical revision before any future hardware claim.",
+      "build": {
+        "supported": false,
+        "status": "upstream-target-identified",
+        "recipe_id": null,
+        "input_audit": "not_completed"
+      },
+      "validation": {
+        "project_build": "not_performed",
+        "reproducibility": "not_performed",
+        "emulator": "not_performed",
+        "hardware": "not_performed",
+        "external_hardware": "not_assessed"
+      },
+      "evidence_refs": [
+        "cb2606-board-names-amd-pademelon",
+        "cb2606-board-config-amd-pademelon"
+      ],
+      "last_verified_on": "2026-09-22",
+      "notes": "The upstream target exists at the pinned revision. This project has not yet implemented or exercised its build recipe."
+    },
+    {
+      "id": "framework-azalea",
+      "kind": "board",
+      "name": "Azalea (Framework 13 AMD 7040)",
+      "manufacturer": "Framework",
+      "architecture": "x86_64",
+      "cpu_vendor": "AMD",
+      "relationships": {
+        "soc_ids": [
+          "soc-phoenix-fsp"
+        ]
+      },
+      "upstream": {
+        "project": "coreboot",
+        "repository": "https://github.com/coreboot/coreboot",
+        "tag": "26.06",
+        "commit": "5cbf8afc4c08949c9b4ee1cb9dc5439add8a937e",
+        "mainboard": "framework/azalea",
+        "kconfig_symbol": "BOARD_FRAMEWORK_AZALEA",
+        "source_paths": [
+          "src/mainboard/framework/azalea/Kconfig",
+          "src/mainboard/framework/azalea/Kconfig.name"
+        ]
+      },
+      "board_revision_constraints": "Not established by the cited Kconfig target; confirm exact physical revision before any future hardware claim.",
+      "build": {
+        "supported": false,
+        "status": "upstream-target-identified",
+        "recipe_id": null,
+        "input_audit": "not_completed"
+      },
+      "validation": {
+        "project_build": "not_performed",
+        "reproducibility": "not_performed",
+        "emulator": "not_performed",
+        "hardware": "not_performed",
+        "external_hardware": "not_assessed"
+      },
+      "evidence_refs": [
+        "cb2606-board-names-framework-azalea",
+        "cb2606-board-config-framework-azalea"
+      ],
+      "last_verified_on": "2026-09-22",
+      "notes": "The upstream target exists at the pinned revision. This project has not yet implemented or exercised its build recipe."
+    },
+    {
+      "id": "google-dewatt",
+      "kind": "board",
+      "name": "Dewatt (Acer Chromebook Spin 514)",
+      "manufacturer": "Google",
+      "architecture": "x86_64",
+      "cpu_vendor": "AMD",
+      "relationships": {
+        "soc_ids": [
+          "soc-cezanne"
+        ]
+      },
+      "upstream": {
+        "project": "coreboot",
+        "repository": "https://github.com/coreboot/coreboot",
+        "tag": "26.06",
+        "commit": "5cbf8afc4c08949c9b4ee1cb9dc5439add8a937e",
+        "mainboard": "google/guybrush",
+        "kconfig_symbol": "BOARD_GOOGLE_DEWATT",
+        "source_paths": [
+          "src/mainboard/google/guybrush/Kconfig",
+          "src/mainboard/google/guybrush/Kconfig.name"
+        ]
+      },
+      "board_revision_constraints": "Not established by the cited Kconfig target; confirm exact physical revision before any future hardware claim.",
+      "build": {
+        "supported": false,
+        "status": "upstream-target-identified",
+        "recipe_id": null,
+        "input_audit": "not_completed"
+      },
+      "validation": {
+        "project_build": "not_performed",
+        "reproducibility": "not_performed",
+        "emulator": "not_performed",
+        "hardware": "not_performed",
+        "external_hardware": "not_assessed"
+      },
+      "evidence_refs": [
+        "cb2606-board-names-google-guybrush",
+        "cb2606-board-config-google-guybrush"
+      ],
+      "last_verified_on": "2026-09-22",
+      "notes": "The upstream target exists at the pinned revision. This project has not yet implemented or exercised its build recipe."
+    },
+    {
+      "id": "google-guybrush",
+      "kind": "board",
+      "name": "Guybrush",
+      "manufacturer": "Google",
+      "architecture": "x86_64",
+      "cpu_vendor": "AMD",
+      "relationships": {
+        "soc_ids": [
+          "soc-cezanne"
+        ]
+      },
+      "upstream": {
+        "project": "coreboot",
+        "repository": "https://github.com/coreboot/coreboot",
+        "tag": "26.06",
+        "commit": "5cbf8afc4c08949c9b4ee1cb9dc5439add8a937e",
+        "mainboard": "google/guybrush",
+        "kconfig_symbol": "BOARD_GOOGLE_GUYBRUSH",
+        "source_paths": [
+          "src/mainboard/google/guybrush/Kconfig",
+          "src/mainboard/google/guybrush/Kconfig.name"
+        ]
+      },
+      "board_revision_constraints": "Not established by the cited Kconfig target; confirm exact physical revision before any future hardware claim.",
+      "build": {
+        "supported": false,
+        "status": "upstream-target-identified",
+        "recipe_id": null,
+        "input_audit": "not_completed"
+      },
+      "validation": {
+        "project_build": "not_performed",
+        "reproducibility": "not_performed",
+        "emulator": "not_performed",
+        "hardware": "not_performed",
+        "external_hardware": "not_assessed"
+      },
+      "evidence_refs": [
+        "cb2606-board-names-google-guybrush",
+        "cb2606-board-config-google-guybrush"
+      ],
+      "last_verified_on": "2026-09-22",
+      "notes": "The upstream target exists at the pinned revision. This project has not yet implemented or exercised its build recipe."
+    },
+    {
+      "id": "google-nipperkin",
+      "kind": "board",
+      "name": "Nipperkin (HP Elite c645 G2 Chromebook)",
+      "manufacturer": "Google",
+      "architecture": "x86_64",
+      "cpu_vendor": "AMD",
+      "relationships": {
+        "soc_ids": [
+          "soc-cezanne"
+        ]
+      },
+      "upstream": {
+        "project": "coreboot",
+        "repository": "https://github.com/coreboot/coreboot",
+        "tag": "26.06",
+        "commit": "5cbf8afc4c08949c9b4ee1cb9dc5439add8a937e",
+        "mainboard": "google/guybrush",
+        "kconfig_symbol": "BOARD_GOOGLE_NIPPERKIN",
+        "source_paths": [
+          "src/mainboard/google/guybrush/Kconfig",
+          "src/mainboard/google/guybrush/Kconfig.name"
+        ]
+      },
+      "board_revision_constraints": "Not established by the cited Kconfig target; confirm exact physical revision before any future hardware claim.",
+      "build": {
+        "supported": false,
+        "status": "upstream-target-identified",
+        "recipe_id": null,
+        "input_audit": "not_completed"
+      },
+      "validation": {
+        "project_build": "not_performed",
+        "reproducibility": "not_performed",
+        "emulator": "not_performed",
+        "hardware": "not_performed",
+        "external_hardware": "not_assessed"
+      },
+      "evidence_refs": [
+        "cb2606-board-names-google-guybrush",
+        "cb2606-board-config-google-guybrush"
+      ],
+      "last_verified_on": "2026-09-22",
+      "notes": "The upstream target exists at the pinned revision. This project has not yet implemented or exercised its build recipe."
+    },
+    {
+      "id": "google-aleena",
+      "kind": "board",
+      "name": "Aleena/Kasumi (Acer Chromebook  315 (CB315-2H), 311 (C721) / Spin 311 (R721T))",
+      "manufacturer": "Google",
+      "architecture": "x86_64",
+      "cpu_vendor": "AMD",
+      "relationships": {
+        "soc_ids": [
+          "soc-stoneyridge"
+        ]
+      },
+      "upstream": {
+        "project": "coreboot",
+        "repository": "https://github.com/coreboot/coreboot",
+        "tag": "26.06",
+        "commit": "5cbf8afc4c08949c9b4ee1cb9dc5439add8a937e",
+        "mainboard": "google/kahlee",
+        "kconfig_symbol": "BOARD_GOOGLE_ALEENA",
+        "source_paths": [
+          "src/mainboard/google/kahlee/Kconfig",
+          "src/mainboard/google/kahlee/Kconfig.name"
+        ]
+      },
+      "board_revision_constraints": "Not established by the cited Kconfig target; confirm exact physical revision before any future hardware claim.",
+      "build": {
+        "supported": false,
+        "status": "upstream-target-identified",
+        "recipe_id": null,
+        "input_audit": "not_completed"
+      },
+      "validation": {
+        "project_build": "not_performed",
+        "reproducibility": "not_performed",
+        "emulator": "not_performed",
+        "hardware": "not_performed",
+        "external_hardware": "not_assessed"
+      },
+      "evidence_refs": [
+        "cb2606-board-names-google-kahlee",
+        "cb2606-board-config-google-kahlee"
+      ],
+      "last_verified_on": "2026-09-22",
+      "notes": "The upstream target exists at the pinned revision. This project has not yet implemented or exercised its build recipe."
+    },
+    {
+      "id": "google-careena",
+      "kind": "board",
+      "name": "Barla/Careena (HP Chromebook 11A G6/G8 EE, 14A G5/G6)",
+      "manufacturer": "Google",
+      "architecture": "x86_64",
+      "cpu_vendor": "AMD",
+      "relationships": {
+        "soc_ids": [
+          "soc-stoneyridge"
+        ]
+      },
+      "upstream": {
+        "project": "coreboot",
+        "repository": "https://github.com/coreboot/coreboot",
+        "tag": "26.06",
+        "commit": "5cbf8afc4c08949c9b4ee1cb9dc5439add8a937e",
+        "mainboard": "google/kahlee",
+        "kconfig_symbol": "BOARD_GOOGLE_CAREENA",
+        "source_paths": [
+          "src/mainboard/google/kahlee/Kconfig",
+          "src/mainboard/google/kahlee/Kconfig.name"
+        ]
+      },
+      "board_revision_constraints": "Not established by the cited Kconfig target; confirm exact physical revision before any future hardware claim.",
+      "build": {
+        "supported": false,
+        "status": "upstream-target-identified",
+        "recipe_id": null,
+        "input_audit": "not_completed"
+      },
+      "validation": {
+        "project_build": "not_performed",
+        "reproducibility": "not_performed",
+        "emulator": "not_performed",
+        "hardware": "not_performed",
+        "external_hardware": "not_assessed"
+      },
+      "evidence_refs": [
+        "cb2606-board-names-google-kahlee",
+        "cb2606-board-config-google-kahlee"
+      ],
+      "last_verified_on": "2026-09-22",
+      "notes": "The upstream target exists at the pinned revision. This project has not yet implemented or exercised its build recipe."
+    },
+    {
+      "id": "google-grunt",
+      "kind": "board",
+      "name": "Grunt",
+      "manufacturer": "Google",
+      "architecture": "x86_64",
+      "cpu_vendor": "AMD",
+      "relationships": {
+        "soc_ids": [
+          "soc-stoneyridge"
+        ]
+      },
+      "upstream": {
+        "project": "coreboot",
+        "repository": "https://github.com/coreboot/coreboot",
+        "tag": "26.06",
+        "commit": "5cbf8afc4c08949c9b4ee1cb9dc5439add8a937e",
+        "mainboard": "google/kahlee",
+        "kconfig_symbol": "BOARD_GOOGLE_GRUNT",
+        "source_paths": [
+          "src/mainboard/google/kahlee/Kconfig",
+          "src/mainboard/google/kahlee/Kconfig.name"
+        ]
+      },
+      "board_revision_constraints": "Not established by the cited Kconfig target; confirm exact physical revision before any future hardware claim.",
+      "build": {
+        "supported": false,
+        "status": "upstream-target-identified",
+        "recipe_id": null,
+        "input_audit": "not_completed"
+      },
+      "validation": {
+        "project_build": "not_performed",
+        "reproducibility": "not_performed",
+        "emulator": "not_performed",
+        "hardware": "not_performed",
+        "external_hardware": "not_assessed"
+      },
+      "evidence_refs": [
+        "cb2606-board-names-google-kahlee",
+        "cb2606-board-config-google-kahlee"
+      ],
+      "last_verified_on": "2026-09-22",
+      "notes": "The upstream target exists at the pinned revision. This project has not yet implemented or exercised its build recipe."
+    },
+    {
+      "id": "google-liara",
+      "kind": "board",
+      "name": "Liara (Lenovo 14e Chromebook, Chromebook S345-14)",
+      "manufacturer": "Google",
+      "architecture": "x86_64",
+      "cpu_vendor": "AMD",
+      "relationships": {
+        "soc_ids": [
+          "soc-stoneyridge"
+        ]
+      },
+      "upstream": {
+        "project": "coreboot",
+        "repository": "https://github.com/coreboot/coreboot",
+        "tag": "26.06",
+        "commit": "5cbf8afc4c08949c9b4ee1cb9dc5439add8a937e",
+        "mainboard": "google/kahlee",
+        "kconfig_symbol": "BOARD_GOOGLE_LIARA",
+        "source_paths": [
+          "src/mainboard/google/kahlee/Kconfig",
+          "src/mainboard/google/kahlee/Kconfig.name"
+        ]
+      },
+      "board_revision_constraints": "Not established by the cited Kconfig target; confirm exact physical revision before any future hardware claim.",
+      "build": {
+        "supported": false,
+        "status": "upstream-target-identified",
+        "recipe_id": null,
+        "input_audit": "not_completed"
+      },
+      "validation": {
+        "project_build": "not_performed",
+        "reproducibility": "not_performed",
+        "emulator": "not_performed",
+        "hardware": "not_performed",
+        "external_hardware": "not_assessed"
+      },
+      "evidence_refs": [
+        "cb2606-board-names-google-kahlee",
+        "cb2606-board-config-google-kahlee"
+      ],
+      "last_verified_on": "2026-09-22",
+      "notes": "The upstream target exists at the pinned revision. This project has not yet implemented or exercised its build recipe."
+    },
+    {
+      "id": "google-nuwani",
+      "kind": "board",
+      "name": "Nuwani",
+      "manufacturer": "Google",
+      "architecture": "x86_64",
+      "cpu_vendor": "AMD",
+      "relationships": {
+        "soc_ids": [
+          "soc-stoneyridge"
+        ]
+      },
+      "upstream": {
+        "project": "coreboot",
+        "repository": "https://github.com/coreboot/coreboot",
+        "tag": "26.06",
+        "commit": "5cbf8afc4c08949c9b4ee1cb9dc5439add8a937e",
+        "mainboard": "google/kahlee",
+        "kconfig_symbol": "BOARD_GOOGLE_NUWANI",
+        "source_paths": [
+          "src/mainboard/google/kahlee/Kconfig",
+          "src/mainboard/google/kahlee/Kconfig.name"
+        ]
+      },
+      "board_revision_constraints": "Not established by the cited Kconfig target; confirm exact physical revision before any future hardware claim.",
+      "build": {
+        "supported": false,
+        "status": "upstream-target-identified",
+        "recipe_id": null,
+        "input_audit": "not_completed"
+      },
+      "validation": {
+        "project_build": "not_performed",
+        "reproducibility": "not_performed",
+        "emulator": "not_performed",
+        "hardware": "not_performed",
+        "external_hardware": "not_assessed"
+      },
+      "evidence_refs": [
+        "cb2606-board-names-google-kahlee",
+        "cb2606-board-config-google-kahlee"
+      ],
+      "last_verified_on": "2026-09-22",
+      "notes": "The upstream target exists at the pinned revision. This project has not yet implemented or exercised its build recipe."
+    },
+    {
+      "id": "google-treeya",
+      "kind": "board",
+      "name": "Treeya (Lenovo 100e/300e Gen2 AMD)",
+      "manufacturer": "Google",
+      "architecture": "x86_64",
+      "cpu_vendor": "AMD",
+      "relationships": {
+        "soc_ids": [
+          "soc-stoneyridge"
+        ]
+      },
+      "upstream": {
+        "project": "coreboot",
+        "repository": "https://github.com/coreboot/coreboot",
+        "tag": "26.06",
+        "commit": "5cbf8afc4c08949c9b4ee1cb9dc5439add8a937e",
+        "mainboard": "google/kahlee",
+        "kconfig_symbol": "BOARD_GOOGLE_TREEYA",
+        "source_paths": [
+          "src/mainboard/google/kahlee/Kconfig",
+          "src/mainboard/google/kahlee/Kconfig.name"
+        ]
+      },
+      "board_revision_constraints": "Not established by the cited Kconfig target; confirm exact physical revision before any future hardware claim.",
+      "build": {
+        "supported": false,
+        "status": "upstream-target-identified",
+        "recipe_id": null,
+        "input_audit": "not_completed"
+      },
+      "validation": {
+        "project_build": "not_performed",
+        "reproducibility": "not_performed",
+        "emulator": "not_performed",
+        "hardware": "not_performed",
+        "external_hardware": "not_assessed"
+      },
+      "evidence_refs": [
+        "cb2606-board-names-google-kahlee",
+        "cb2606-board-config-google-kahlee"
+      ],
+      "last_verified_on": "2026-09-22",
+      "notes": "The upstream target exists at the pinned revision. This project has not yet implemented or exercised its build recipe."
+    },
+    {
+      "id": "google-crystaldrift",
+      "kind": "board",
+      "name": "Crystaldrift (SPC Chromebook V1)",
+      "manufacturer": "Google",
+      "architecture": "x86_64",
+      "cpu_vendor": "AMD",
+      "relationships": {
+        "soc_ids": [
+          "soc-mendocino"
+        ]
+      },
+      "upstream": {
+        "project": "coreboot",
+        "repository": "https://github.com/coreboot/coreboot",
+        "tag": "26.06",
+        "commit": "5cbf8afc4c08949c9b4ee1cb9dc5439add8a937e",
+        "mainboard": "google/skyrim",
+        "kconfig_symbol": "BOARD_GOOGLE_CRYSTALDRIFT",
+        "source_paths": [
+          "src/mainboard/google/skyrim/Kconfig",
+          "src/mainboard/google/skyrim/Kconfig.name"
+        ]
+      },
+      "board_revision_constraints": "Not established by the cited Kconfig target; confirm exact physical revision before any future hardware claim.",
+      "build": {
+        "supported": false,
+        "status": "upstream-target-identified",
+        "recipe_id": null,
+        "input_audit": "not_completed"
+      },
+      "validation": {
+        "project_build": "not_performed",
+        "reproducibility": "not_performed",
+        "emulator": "not_performed",
+        "hardware": "not_performed",
+        "external_hardware": "not_assessed"
+      },
+      "evidence_refs": [
+        "cb2606-board-names-google-skyrim",
+        "cb2606-board-config-google-skyrim"
+      ],
+      "last_verified_on": "2026-09-22",
+      "notes": "The upstream target exists at the pinned revision. This project has not yet implemented or exercised its build recipe."
+    },
+    {
+      "id": "google-frostflow",
+      "kind": "board",
+      "name": "Frostflow (ASUS Chromebook CM34 Flip)",
+      "manufacturer": "Google",
+      "architecture": "x86_64",
+      "cpu_vendor": "AMD",
+      "relationships": {
+        "soc_ids": [
+          "soc-mendocino"
+        ]
+      },
+      "upstream": {
+        "project": "coreboot",
+        "repository": "https://github.com/coreboot/coreboot",
+        "tag": "26.06",
+        "commit": "5cbf8afc4c08949c9b4ee1cb9dc5439add8a937e",
+        "mainboard": "google/skyrim",
+        "kconfig_symbol": "BOARD_GOOGLE_FROSTFLOW",
+        "source_paths": [
+          "src/mainboard/google/skyrim/Kconfig",
+          "src/mainboard/google/skyrim/Kconfig.name"
+        ]
+      },
+      "board_revision_constraints": "Not established by the cited Kconfig target; confirm exact physical revision before any future hardware claim.",
+      "build": {
+        "supported": false,
+        "status": "upstream-target-identified",
+        "recipe_id": null,
+        "input_audit": "not_completed"
+      },
+      "validation": {
+        "project_build": "not_performed",
+        "reproducibility": "not_performed",
+        "emulator": "not_performed",
+        "hardware": "not_performed",
+        "external_hardware": "not_assessed"
+      },
+      "evidence_refs": [
+        "cb2606-board-names-google-skyrim",
+        "cb2606-board-config-google-skyrim"
+      ],
+      "last_verified_on": "2026-09-22",
+      "notes": "The upstream target exists at the pinned revision. This project has not yet implemented or exercised its build recipe."
+    },
+    {
+      "id": "google-markarth",
+      "kind": "board",
+      "name": "Markarth (Acer Chromebook Plus 514)",
+      "manufacturer": "Google",
+      "architecture": "x86_64",
+      "cpu_vendor": "AMD",
+      "relationships": {
+        "soc_ids": [
+          "soc-mendocino"
+        ]
+      },
+      "upstream": {
+        "project": "coreboot",
+        "repository": "https://github.com/coreboot/coreboot",
+        "tag": "26.06",
+        "commit": "5cbf8afc4c08949c9b4ee1cb9dc5439add8a937e",
+        "mainboard": "google/skyrim",
+        "kconfig_symbol": "BOARD_GOOGLE_MARKARTH",
+        "source_paths": [
+          "src/mainboard/google/skyrim/Kconfig",
+          "src/mainboard/google/skyrim/Kconfig.name"
+        ]
+      },
+      "board_revision_constraints": "Not established by the cited Kconfig target; confirm exact physical revision before any future hardware claim.",
+      "build": {
+        "supported": false,
+        "status": "upstream-target-identified",
+        "recipe_id": null,
+        "input_audit": "not_completed"
+      },
+      "validation": {
+        "project_build": "not_performed",
+        "reproducibility": "not_performed",
+        "emulator": "not_performed",
+        "hardware": "not_performed",
+        "external_hardware": "not_assessed"
+      },
+      "evidence_refs": [
+        "cb2606-board-names-google-skyrim",
+        "cb2606-board-config-google-skyrim"
+      ],
+      "last_verified_on": "2026-09-22",
+      "notes": "The upstream target exists at the pinned revision. This project has not yet implemented or exercised its build recipe."
+    },
+    {
+      "id": "google-skyrim",
+      "kind": "board",
+      "name": "Skyrim",
+      "manufacturer": "Google",
+      "architecture": "x86_64",
+      "cpu_vendor": "AMD",
+      "relationships": {
+        "soc_ids": [
+          "soc-mendocino"
+        ]
+      },
+      "upstream": {
+        "project": "coreboot",
+        "repository": "https://github.com/coreboot/coreboot",
+        "tag": "26.06",
+        "commit": "5cbf8afc4c08949c9b4ee1cb9dc5439add8a937e",
+        "mainboard": "google/skyrim",
+        "kconfig_symbol": "BOARD_GOOGLE_SKYRIM",
+        "source_paths": [
+          "src/mainboard/google/skyrim/Kconfig",
+          "src/mainboard/google/skyrim/Kconfig.name"
+        ]
+      },
+      "board_revision_constraints": "Not established by the cited Kconfig target; confirm exact physical revision before any future hardware claim.",
+      "build": {
+        "supported": false,
+        "status": "upstream-target-identified",
+        "recipe_id": null,
+        "input_audit": "not_completed"
+      },
+      "validation": {
+        "project_build": "not_performed",
+        "reproducibility": "not_performed",
+        "emulator": "not_performed",
+        "hardware": "not_performed",
+        "external_hardware": "not_assessed"
+      },
+      "evidence_refs": [
+        "cb2606-board-names-google-skyrim",
+        "cb2606-board-config-google-skyrim"
+      ],
+      "last_verified_on": "2026-09-22",
+      "notes": "The upstream target exists at the pinned revision. This project has not yet implemented or exercised its build recipe."
+    },
+    {
+      "id": "google-winterhold",
+      "kind": "board",
+      "name": "Winterhold (Dell Latitude 3445 Chromebook)",
+      "manufacturer": "Google",
+      "architecture": "x86_64",
+      "cpu_vendor": "AMD",
+      "relationships": {
+        "soc_ids": [
+          "soc-mendocino"
+        ]
+      },
+      "upstream": {
+        "project": "coreboot",
+        "repository": "https://github.com/coreboot/coreboot",
+        "tag": "26.06",
+        "commit": "5cbf8afc4c08949c9b4ee1cb9dc5439add8a937e",
+        "mainboard": "google/skyrim",
+        "kconfig_symbol": "BOARD_GOOGLE_WINTERHOLD",
+        "source_paths": [
+          "src/mainboard/google/skyrim/Kconfig",
+          "src/mainboard/google/skyrim/Kconfig.name"
+        ]
+      },
+      "board_revision_constraints": "Not established by the cited Kconfig target; confirm exact physical revision before any future hardware claim.",
+      "build": {
+        "supported": false,
+        "status": "upstream-target-identified",
+        "recipe_id": null,
+        "input_audit": "not_completed"
+      },
+      "validation": {
+        "project_build": "not_performed",
+        "reproducibility": "not_performed",
+        "emulator": "not_performed",
+        "hardware": "not_performed",
+        "external_hardware": "not_assessed"
+      },
+      "evidence_refs": [
+        "cb2606-board-names-google-skyrim",
+        "cb2606-board-config-google-skyrim"
+      ],
+      "last_verified_on": "2026-09-22",
+      "notes": "The upstream target exists at the pinned revision. This project has not yet implemented or exercised its build recipe."
+    },
+    {
+      "id": "google-berknip",
+      "kind": "board",
+      "name": "Berknip (HP Pro c645 Chromebook Enterprise)",
+      "manufacturer": "Google",
+      "architecture": "x86_64",
+      "cpu_vendor": "AMD",
+      "relationships": {
+        "soc_ids": [
+          "soc-picasso"
+        ]
+      },
+      "upstream": {
+        "project": "coreboot",
+        "repository": "https://github.com/coreboot/coreboot",
+        "tag": "26.06",
+        "commit": "5cbf8afc4c08949c9b4ee1cb9dc5439add8a937e",
+        "mainboard": "google/zork",
+        "kconfig_symbol": "BOARD_GOOGLE_BERKNIP",
+        "source_paths": [
+          "src/mainboard/google/zork/Kconfig",
+          "src/mainboard/google/zork/Kconfig.name"
+        ]
+      },
+      "board_revision_constraints": "Not established by the cited Kconfig target; confirm exact physical revision before any future hardware claim.",
+      "build": {
+        "supported": false,
+        "status": "upstream-target-identified",
+        "recipe_id": null,
+        "input_audit": "not_completed"
+      },
+      "validation": {
+        "project_build": "not_performed",
+        "reproducibility": "not_performed",
+        "emulator": "not_performed",
+        "hardware": "not_performed",
+        "external_hardware": "not_assessed"
+      },
+      "evidence_refs": [
+        "cb2606-board-names-google-zork",
+        "cb2606-board-config-google-zork"
+      ],
+      "last_verified_on": "2026-09-22",
+      "notes": "The upstream target exists at the pinned revision. This project has not yet implemented or exercised its build recipe."
+    },
+    {
+      "id": "google-dalboz",
+      "kind": "board",
+      "name": "Dalboz",
+      "manufacturer": "Google",
+      "architecture": "x86_64",
+      "cpu_vendor": "AMD",
+      "relationships": {
+        "soc_ids": [
+          "soc-picasso"
+        ]
+      },
+      "upstream": {
+        "project": "coreboot",
+        "repository": "https://github.com/coreboot/coreboot",
+        "tag": "26.06",
+        "commit": "5cbf8afc4c08949c9b4ee1cb9dc5439add8a937e",
+        "mainboard": "google/zork",
+        "kconfig_symbol": "BOARD_GOOGLE_DALBOZ",
+        "source_paths": [
+          "src/mainboard/google/zork/Kconfig",
+          "src/mainboard/google/zork/Kconfig.name"
+        ]
+      },
+      "board_revision_constraints": "Not established by the cited Kconfig target; confirm exact physical revision before any future hardware claim.",
+      "build": {
+        "supported": false,
+        "status": "upstream-target-identified",
+        "recipe_id": null,
+        "input_audit": "not_completed"
+      },
+      "validation": {
+        "project_build": "not_performed",
+        "reproducibility": "not_performed",
+        "emulator": "not_performed",
+        "hardware": "not_performed",
+        "external_hardware": "not_assessed"
+      },
+      "evidence_refs": [
+        "cb2606-board-names-google-zork",
+        "cb2606-board-config-google-zork"
+      ],
+      "last_verified_on": "2026-09-22",
+      "notes": "The upstream target exists at the pinned revision. This project has not yet implemented or exercised its build recipe."
+    },
+    {
+      "id": "google-dirinboz",
+      "kind": "board",
+      "name": "Dirinboz (HP Chromebook 14a-nd0097nr)",
+      "manufacturer": "Google",
+      "architecture": "x86_64",
+      "cpu_vendor": "AMD",
+      "relationships": {
+        "soc_ids": [
+          "soc-picasso"
+        ]
+      },
+      "upstream": {
+        "project": "coreboot",
+        "repository": "https://github.com/coreboot/coreboot",
+        "tag": "26.06",
+        "commit": "5cbf8afc4c08949c9b4ee1cb9dc5439add8a937e",
+        "mainboard": "google/zork",
+        "kconfig_symbol": "BOARD_GOOGLE_DIRINBOZ",
+        "source_paths": [
+          "src/mainboard/google/zork/Kconfig",
+          "src/mainboard/google/zork/Kconfig.name"
+        ]
+      },
+      "board_revision_constraints": "Not established by the cited Kconfig target; confirm exact physical revision before any future hardware claim.",
+      "build": {
+        "supported": false,
+        "status": "upstream-target-identified",
+        "recipe_id": null,
+        "input_audit": "not_completed"
+      },
+      "validation": {
+        "project_build": "not_performed",
+        "reproducibility": "not_performed",
+        "emulator": "not_performed",
+        "hardware": "not_performed",
+        "external_hardware": "not_assessed"
+      },
+      "evidence_refs": [
+        "cb2606-board-names-google-zork",
+        "cb2606-board-config-google-zork"
+      ],
+      "last_verified_on": "2026-09-22",
+      "notes": "The upstream target exists at the pinned revision. This project has not yet implemented or exercised its build recipe."
+    },
+    {
+      "id": "google-ezkinil",
+      "kind": "board",
+      "name": "Ezkinil (Acer Chromebook Spin 514)",
+      "manufacturer": "Google",
+      "architecture": "x86_64",
+      "cpu_vendor": "AMD",
+      "relationships": {
+        "soc_ids": [
+          "soc-picasso"
+        ]
+      },
+      "upstream": {
+        "project": "coreboot",
+        "repository": "https://github.com/coreboot/coreboot",
+        "tag": "26.06",
+        "commit": "5cbf8afc4c08949c9b4ee1cb9dc5439add8a937e",
+        "mainboard": "google/zork",
+        "kconfig_symbol": "BOARD_GOOGLE_EZKINIL",
+        "source_paths": [
+          "src/mainboard/google/zork/Kconfig",
+          "src/mainboard/google/zork/Kconfig.name"
+        ]
+      },
+      "board_revision_constraints": "Not established by the cited Kconfig target; confirm exact physical revision before any future hardware claim.",
+      "build": {
+        "supported": false,
+        "status": "upstream-target-identified",
+        "recipe_id": null,
+        "input_audit": "not_completed"
+      },
+      "validation": {
+        "project_build": "not_performed",
+        "reproducibility": "not_performed",
+        "emulator": "not_performed",
+        "hardware": "not_performed",
+        "external_hardware": "not_assessed"
+      },
+      "evidence_refs": [
+        "cb2606-board-names-google-zork",
+        "cb2606-board-config-google-zork"
+      ],
+      "last_verified_on": "2026-09-22",
+      "notes": "The upstream target exists at the pinned revision. This project has not yet implemented or exercised its build recipe."
+    },
+    {
+      "id": "google-gumboz",
+      "kind": "board",
+      "name": "Gumboz (HP Chromebook x360 14a)",
+      "manufacturer": "Google",
+      "architecture": "x86_64",
+      "cpu_vendor": "AMD",
+      "relationships": {
+        "soc_ids": [
+          "soc-picasso"
+        ]
+      },
+      "upstream": {
+        "project": "coreboot",
+        "repository": "https://github.com/coreboot/coreboot",
+        "tag": "26.06",
+        "commit": "5cbf8afc4c08949c9b4ee1cb9dc5439add8a937e",
+        "mainboard": "google/zork",
+        "kconfig_symbol": "BOARD_GOOGLE_GUMBOZ",
+        "source_paths": [
+          "src/mainboard/google/zork/Kconfig",
+          "src/mainboard/google/zork/Kconfig.name"
+        ]
+      },
+      "board_revision_constraints": "Not established by the cited Kconfig target; confirm exact physical revision before any future hardware claim.",
+      "build": {
+        "supported": false,
+        "status": "upstream-target-identified",
+        "recipe_id": null,
+        "input_audit": "not_completed"
+      },
+      "validation": {
+        "project_build": "not_performed",
+        "reproducibility": "not_performed",
+        "emulator": "not_performed",
+        "hardware": "not_performed",
+        "external_hardware": "not_assessed"
+      },
+      "evidence_refs": [
+        "cb2606-board-names-google-zork",
+        "cb2606-board-config-google-zork"
+      ],
+      "last_verified_on": "2026-09-22",
+      "notes": "The upstream target exists at the pinned revision. This project has not yet implemented or exercised its build recipe."
+    },
+    {
+      "id": "google-morphius",
+      "kind": "board",
+      "name": "Morphius (Lenovo ThinkPad C13 Yoga Chromebook)",
+      "manufacturer": "Google",
+      "architecture": "x86_64",
+      "cpu_vendor": "AMD",
+      "relationships": {
+        "soc_ids": [
+          "soc-picasso"
+        ]
+      },
+      "upstream": {
+        "project": "coreboot",
+        "repository": "https://github.com/coreboot/coreboot",
+        "tag": "26.06",
+        "commit": "5cbf8afc4c08949c9b4ee1cb9dc5439add8a937e",
+        "mainboard": "google/zork",
+        "kconfig_symbol": "BOARD_GOOGLE_MORPHIUS",
+        "source_paths": [
+          "src/mainboard/google/zork/Kconfig",
+          "src/mainboard/google/zork/Kconfig.name"
+        ]
+      },
+      "board_revision_constraints": "Not established by the cited Kconfig target; confirm exact physical revision before any future hardware claim.",
+      "build": {
+        "supported": false,
+        "status": "upstream-target-identified",
+        "recipe_id": null,
+        "input_audit": "not_completed"
+      },
+      "validation": {
+        "project_build": "not_performed",
+        "reproducibility": "not_performed",
+        "emulator": "not_performed",
+        "hardware": "not_performed",
+        "external_hardware": "not_assessed"
+      },
+      "evidence_refs": [
+        "cb2606-board-names-google-zork",
+        "cb2606-board-config-google-zork"
+      ],
+      "last_verified_on": "2026-09-22",
+      "notes": "The upstream target exists at the pinned revision. This project has not yet implemented or exercised its build recipe."
+    },
+    {
+      "id": "google-shuboz",
+      "kind": "board",
+      "name": "Shuboz",
+      "manufacturer": "Google",
+      "architecture": "x86_64",
+      "cpu_vendor": "AMD",
+      "relationships": {
+        "soc_ids": [
+          "soc-picasso"
+        ]
+      },
+      "upstream": {
+        "project": "coreboot",
+        "repository": "https://github.com/coreboot/coreboot",
+        "tag": "26.06",
+        "commit": "5cbf8afc4c08949c9b4ee1cb9dc5439add8a937e",
+        "mainboard": "google/zork",
+        "kconfig_symbol": "BOARD_GOOGLE_SHUBOZ",
+        "source_paths": [
+          "src/mainboard/google/zork/Kconfig",
+          "src/mainboard/google/zork/Kconfig.name"
+        ]
+      },
+      "board_revision_constraints": "Not established by the cited Kconfig target; confirm exact physical revision before any future hardware claim.",
+      "build": {
+        "supported": false,
+        "status": "upstream-target-identified",
+        "recipe_id": null,
+        "input_audit": "not_completed"
+      },
+      "validation": {
+        "project_build": "not_performed",
+        "reproducibility": "not_performed",
+        "emulator": "not_performed",
+        "hardware": "not_performed",
+        "external_hardware": "not_assessed"
+      },
+      "evidence_refs": [
+        "cb2606-board-names-google-zork",
+        "cb2606-board-config-google-zork"
+      ],
+      "last_verified_on": "2026-09-22",
+      "notes": "The upstream target exists at the pinned revision. This project has not yet implemented or exercised its build recipe."
+    },
+    {
+      "id": "google-trembyle",
+      "kind": "board",
+      "name": "Trembyle",
+      "manufacturer": "Google",
+      "architecture": "x86_64",
+      "cpu_vendor": "AMD",
+      "relationships": {
+        "soc_ids": [
+          "soc-picasso"
+        ]
+      },
+      "upstream": {
+        "project": "coreboot",
+        "repository": "https://github.com/coreboot/coreboot",
+        "tag": "26.06",
+        "commit": "5cbf8afc4c08949c9b4ee1cb9dc5439add8a937e",
+        "mainboard": "google/zork",
+        "kconfig_symbol": "BOARD_GOOGLE_TREMBYLE",
+        "source_paths": [
+          "src/mainboard/google/zork/Kconfig",
+          "src/mainboard/google/zork/Kconfig.name"
+        ]
+      },
+      "board_revision_constraints": "Not established by the cited Kconfig target; confirm exact physical revision before any future hardware claim.",
+      "build": {
+        "supported": false,
+        "status": "upstream-target-identified",
+        "recipe_id": null,
+        "input_audit": "not_completed"
+      },
+      "validation": {
+        "project_build": "not_performed",
+        "reproducibility": "not_performed",
+        "emulator": "not_performed",
+        "hardware": "not_performed",
+        "external_hardware": "not_assessed"
+      },
+      "evidence_refs": [
+        "cb2606-board-names-google-zork",
+        "cb2606-board-config-google-zork"
+      ],
+      "last_verified_on": "2026-09-22",
+      "notes": "The upstream target exists at the pinned revision. This project has not yet implemented or exercised its build recipe."
+    },
+    {
+      "id": "google-vilboz",
+      "kind": "board",
+      "name": "Vilboz (Lenovo 100e/300e Gen3 AMD)",
+      "manufacturer": "Google",
+      "architecture": "x86_64",
+      "cpu_vendor": "AMD",
+      "relationships": {
+        "soc_ids": [
+          "soc-picasso"
+        ]
+      },
+      "upstream": {
+        "project": "coreboot",
+        "repository": "https://github.com/coreboot/coreboot",
+        "tag": "26.06",
+        "commit": "5cbf8afc4c08949c9b4ee1cb9dc5439add8a937e",
+        "mainboard": "google/zork",
+        "kconfig_symbol": "BOARD_GOOGLE_VILBOZ",
+        "source_paths": [
+          "src/mainboard/google/zork/Kconfig",
+          "src/mainboard/google/zork/Kconfig.name"
+        ]
+      },
+      "board_revision_constraints": "Not established by the cited Kconfig target; confirm exact physical revision before any future hardware claim.",
+      "build": {
+        "supported": false,
+        "status": "upstream-target-identified",
+        "recipe_id": null,
+        "input_audit": "not_completed"
+      },
+      "validation": {
+        "project_build": "not_performed",
+        "reproducibility": "not_performed",
+        "emulator": "not_performed",
+        "hardware": "not_performed",
+        "external_hardware": "not_assessed"
+      },
+      "evidence_refs": [
+        "cb2606-board-names-google-zork",
+        "cb2606-board-config-google-zork"
+      ],
+      "last_verified_on": "2026-09-22",
+      "notes": "The upstream target exists at the pinned revision. This project has not yet implemented or exercised its build recipe."
+    },
+    {
+      "id": "google-woomax",
+      "kind": "board",
+      "name": "Woomax (ASUS Chromebook Flip CM5)",
+      "manufacturer": "Google",
+      "architecture": "x86_64",
+      "cpu_vendor": "AMD",
+      "relationships": {
+        "soc_ids": [
+          "soc-picasso"
+        ]
+      },
+      "upstream": {
+        "project": "coreboot",
+        "repository": "https://github.com/coreboot/coreboot",
+        "tag": "26.06",
+        "commit": "5cbf8afc4c08949c9b4ee1cb9dc5439add8a937e",
+        "mainboard": "google/zork",
+        "kconfig_symbol": "BOARD_GOOGLE_WOOMAX",
+        "source_paths": [
+          "src/mainboard/google/zork/Kconfig",
+          "src/mainboard/google/zork/Kconfig.name"
+        ]
+      },
+      "board_revision_constraints": "Not established by the cited Kconfig target; confirm exact physical revision before any future hardware claim.",
+      "build": {
+        "supported": false,
+        "status": "upstream-target-identified",
+        "recipe_id": null,
+        "input_audit": "not_completed"
+      },
+      "validation": {
+        "project_build": "not_performed",
+        "reproducibility": "not_performed",
+        "emulator": "not_performed",
+        "hardware": "not_performed",
+        "external_hardware": "not_assessed"
+      },
+      "evidence_refs": [
+        "cb2606-board-names-google-zork",
+        "cb2606-board-config-google-zork"
+      ],
+      "last_verified_on": "2026-09-22",
+      "notes": "The upstream target exists at the pinned revision. This project has not yet implemented or exercised its build recipe."
+    },
+    {
+      "id": "pcengines-apu2",
+      "kind": "board",
+      "name": "APU2",
+      "manufacturer": "PC Engines",
+      "architecture": "x86_64",
+      "cpu_vendor": "AMD",
+      "relationships": {
+        "soc_ids": [],
+        "legacy_amd_pi": "CPU_AMD_PI_00730F01"
+      },
+      "upstream": {
+        "project": "coreboot",
+        "repository": "https://github.com/coreboot/coreboot",
+        "tag": "26.06",
+        "commit": "5cbf8afc4c08949c9b4ee1cb9dc5439add8a937e",
+        "mainboard": "pcengines/apu2",
+        "kconfig_symbol": "BOARD_PCENGINES_APU2",
+        "source_paths": [
+          "src/mainboard/pcengines/apu2/Kconfig",
+          "src/mainboard/pcengines/apu2/Kconfig.name"
+        ]
+      },
+      "board_revision_constraints": "Not established by the cited Kconfig target; confirm exact physical revision before any future hardware claim.",
+      "build": {
+        "supported": true,
+        "status": "build-verified",
+        "recipe_id": "pcengines-apu2",
+        "source_commit": "5cbf8afc4c08949c9b4ee1cb9dc5439add8a937e",
+        "environment": "offline bubblewrap build",
+        "payload": "SeaBIOS",
+        "payload_commit": "b52ca86e094d19b58e2304417787e96b940e39c6",
+        "boot_behavior": "unknown",
+        "publication_eligibility": "held_pending_binary_license_review"
+      },
+      "validation": {
+        "project_build": "passed",
+        "artifact_structure": "passed",
+        "artifact_sha256": "519ec13807fc3e514d158c9c4fffd080e2a1454890d477a8f4f083a8856dbef5",
+        "artifact_size_bytes": 8388608,
+        "checks": [
+          "ROM image size",
+          "CBFS contains AGESA",
+          "CBFS contains AMD firmware",
+          "CBFS contains SeaBIOS payload"
+        ],
+        "reproducibility": "passed",
+        "emulator": "not_performed",
+        "boot": "not_performed",
+        "hardware": "not_performed",
+        "external_hardware": "not_assessed",
+        "reproducibility_scope": "two independent clean builds with byte-identical ROMs under the same final recipe and pinned inputs on one host"
+      },
+      "evidence_refs": [
+        "cb2606-board-names-pcengines-apu2",
+        "cb2606-board-config-pcengines-apu2",
+        "coreboot-apu2-blobs"
+      ],
+      "last_verified_on": "2026-09-22",
+      "notes": "The pinned coreboot 26.06 recipe compiled offline and produced a structurally checked ROM with documented inputs and SeaBIOS. Boot behavior and compatibility with physical hardware remain untested. Artifact publication is held for binary license review.",
+      "dependencies": [
+        {
+          "component": "amdfw.rom",
+          "domain": "security_processor",
+          "openness": "binary_only_licensing_unresolved",
+          "required": true
+        },
+        {
+          "component": "AGESA.bin",
+          "domain": "silicon_initialization",
+          "openness": "binary_only_licensing_unresolved",
+          "required": true
+        },
+        {
+          "component": "xhci.bin",
+          "domain": "peripheral_controller",
+          "openness": "binary_only_licensing_unresolved",
+          "required": false
+        }
+      ],
+      "processor_example": {
+        "model": "AMD G Series GX-412TC",
+        "microarchitecture": "Puma",
+        "basis": "coreboot-apu2-blobs",
+        "scope": "APU2 documentation only; not inherited by APU3/4/5"
+      },
+      "validation_events": [
+        {
+          "id": "local-build-20260922-pcengines-apu2",
+          "date": "2026-09-22",
+          "type": "project_build",
+          "result": "passed",
+          "artifact_sha256": "519ec13807fc3e514d158c9c4fffd080e2a1454890d477a8f4f083a8856dbef5",
+          "scope": "offline compilation and structural inspection only; no boot or physical hardware test",
+          "recipe_path": "src/amd_fw/data/recipes/pcengines-apu2.json"
+        },
+        {
+          "id": "same-host-repeatability-20260922-pcengines-apu2",
+          "date": "2026-09-22",
+          "type": "reproducibility",
+          "result": "passed",
+          "scope": "two clean network-isolated builds on one host; bitwise ROM equality; no boot or physical hardware test",
+          "recipe_sha256": "471d22ba5e1fbe12cdeb017b3cbee501139fbeb0489c62996f946a51683cc249",
+          "artifact_sha256": "519ec13807fc3e514d158c9c4fffd080e2a1454890d477a8f4f083a8856dbef5",
+          "manifest_sha256": [
+            "19de101f5d64ca8431dbc1aaa4411c84ca46134c70f76a6e22593c2204f3a4fb",
+            "1b8fc13caaff5ad5063040b6de5658ec74b0ad6bfde9dc36dd4a4bfdcaab3aed"
+          ],
+          "ledger_path": "docs/build-validation.json"
+        }
+      ]
+    },
+    {
+      "id": "pcengines-apu3",
+      "kind": "board",
+      "name": "APU3",
+      "manufacturer": "PC Engines",
+      "architecture": "x86_64",
+      "cpu_vendor": "AMD",
+      "relationships": {
+        "soc_ids": [],
+        "legacy_amd_pi": "CPU_AMD_PI_00730F01"
+      },
+      "upstream": {
+        "project": "coreboot",
+        "repository": "https://github.com/coreboot/coreboot",
+        "tag": "26.06",
+        "commit": "5cbf8afc4c08949c9b4ee1cb9dc5439add8a937e",
+        "mainboard": "pcengines/apu2",
+        "kconfig_symbol": "BOARD_PCENGINES_APU3",
+        "source_paths": [
+          "src/mainboard/pcengines/apu2/Kconfig",
+          "src/mainboard/pcengines/apu2/Kconfig.name"
+        ]
+      },
+      "board_revision_constraints": "Not established by the cited Kconfig target; confirm exact physical revision before any future hardware claim.",
+      "build": {
+        "supported": false,
+        "status": "upstream-target-identified",
+        "recipe_id": null,
+        "input_audit": "not_completed"
+      },
+      "validation": {
+        "project_build": "not_performed",
+        "reproducibility": "not_performed",
+        "emulator": "not_performed",
+        "hardware": "not_performed",
+        "external_hardware": "not_assessed"
+      },
+      "evidence_refs": [
+        "cb2606-board-names-pcengines-apu2",
+        "cb2606-board-config-pcengines-apu2",
+        "coreboot-apu2-blobs"
+      ],
+      "last_verified_on": "2026-09-22",
+      "notes": "The upstream target exists at the pinned revision. This project has not yet implemented or exercised its build recipe.",
+      "dependencies": [
+        {
+          "component": "amdfw.rom",
+          "domain": "security_processor",
+          "openness": "binary_only_licensing_unresolved",
+          "required": true
+        },
+        {
+          "component": "AGESA.bin",
+          "domain": "silicon_initialization",
+          "openness": "binary_only_licensing_unresolved",
+          "required": true
+        },
+        {
+          "component": "xhci.bin",
+          "domain": "peripheral_controller",
+          "openness": "binary_only_licensing_unresolved",
+          "required": false
+        }
+      ]
+    },
+    {
+      "id": "pcengines-apu4",
+      "kind": "board",
+      "name": "APU4",
+      "manufacturer": "PC Engines",
+      "architecture": "x86_64",
+      "cpu_vendor": "AMD",
+      "relationships": {
+        "soc_ids": [],
+        "legacy_amd_pi": "CPU_AMD_PI_00730F01"
+      },
+      "upstream": {
+        "project": "coreboot",
+        "repository": "https://github.com/coreboot/coreboot",
+        "tag": "26.06",
+        "commit": "5cbf8afc4c08949c9b4ee1cb9dc5439add8a937e",
+        "mainboard": "pcengines/apu2",
+        "kconfig_symbol": "BOARD_PCENGINES_APU4",
+        "source_paths": [
+          "src/mainboard/pcengines/apu2/Kconfig",
+          "src/mainboard/pcengines/apu2/Kconfig.name"
+        ]
+      },
+      "board_revision_constraints": "Not established by the cited Kconfig target; confirm exact physical revision before any future hardware claim.",
+      "build": {
+        "supported": false,
+        "status": "upstream-target-identified",
+        "recipe_id": null,
+        "input_audit": "not_completed"
+      },
+      "validation": {
+        "project_build": "not_performed",
+        "reproducibility": "not_performed",
+        "emulator": "not_performed",
+        "hardware": "not_performed",
+        "external_hardware": "not_assessed"
+      },
+      "evidence_refs": [
+        "cb2606-board-names-pcengines-apu2",
+        "cb2606-board-config-pcengines-apu2",
+        "coreboot-apu2-blobs"
+      ],
+      "last_verified_on": "2026-09-22",
+      "notes": "The upstream target exists at the pinned revision. This project has not yet implemented or exercised its build recipe.",
+      "dependencies": [
+        {
+          "component": "amdfw.rom",
+          "domain": "security_processor",
+          "openness": "binary_only_licensing_unresolved",
+          "required": true
+        },
+        {
+          "component": "AGESA.bin",
+          "domain": "silicon_initialization",
+          "openness": "binary_only_licensing_unresolved",
+          "required": true
+        },
+        {
+          "component": "xhci.bin",
+          "domain": "peripheral_controller",
+          "openness": "binary_only_licensing_unresolved",
+          "required": false
+        }
+      ]
+    },
+    {
+      "id": "pcengines-apu5",
+      "kind": "board",
+      "name": "APU5",
+      "manufacturer": "PC Engines",
+      "architecture": "x86_64",
+      "cpu_vendor": "AMD",
+      "relationships": {
+        "soc_ids": [],
+        "legacy_amd_pi": "CPU_AMD_PI_00730F01"
+      },
+      "upstream": {
+        "project": "coreboot",
+        "repository": "https://github.com/coreboot/coreboot",
+        "tag": "26.06",
+        "commit": "5cbf8afc4c08949c9b4ee1cb9dc5439add8a937e",
+        "mainboard": "pcengines/apu2",
+        "kconfig_symbol": "BOARD_PCENGINES_APU5",
+        "source_paths": [
+          "src/mainboard/pcengines/apu2/Kconfig",
+          "src/mainboard/pcengines/apu2/Kconfig.name"
+        ]
+      },
+      "board_revision_constraints": "Not established by the cited Kconfig target; confirm exact physical revision before any future hardware claim.",
+      "build": {
+        "supported": false,
+        "status": "upstream-target-identified",
+        "recipe_id": null,
+        "input_audit": "not_completed"
+      },
+      "validation": {
+        "project_build": "not_performed",
+        "reproducibility": "not_performed",
+        "emulator": "not_performed",
+        "hardware": "not_performed",
+        "external_hardware": "not_assessed"
+      },
+      "evidence_refs": [
+        "cb2606-board-names-pcengines-apu2",
+        "cb2606-board-config-pcengines-apu2",
+        "coreboot-apu2-blobs"
+      ],
+      "last_verified_on": "2026-09-22",
+      "notes": "The upstream target exists at the pinned revision. This project has not yet implemented or exercised its build recipe.",
+      "dependencies": [
+        {
+          "component": "amdfw.rom",
+          "domain": "security_processor",
+          "openness": "binary_only_licensing_unresolved",
+          "required": true
+        },
+        {
+          "component": "AGESA.bin",
+          "domain": "silicon_initialization",
+          "openness": "binary_only_licensing_unresolved",
+          "required": true
+        },
+        {
+          "component": "xhci.bin",
+          "domain": "peripheral_controller",
+          "openness": "binary_only_licensing_unresolved",
+          "required": false
+        }
+      ]
+    },
+    {
+      "id": "starlabs-byte-cezanne",
+      "kind": "board",
+      "name": "Star Labs Byte Mk I (Ryzen 7 5800U)",
+      "manufacturer": "Star Labs",
+      "architecture": "x86_64",
+      "cpu_vendor": "AMD",
+      "relationships": {
+        "soc_ids": [
+          "soc-cezanne"
+        ]
+      },
+      "upstream": {
+        "project": "coreboot",
+        "repository": "https://github.com/coreboot/coreboot",
+        "tag": "26.06",
+        "commit": "5cbf8afc4c08949c9b4ee1cb9dc5439add8a937e",
+        "mainboard": "starlabs/cezanne",
+        "kconfig_symbol": "BOARD_STARLABS_BYTE_CEZANNE",
+        "source_paths": [
+          "src/mainboard/starlabs/cezanne/Kconfig",
+          "src/mainboard/starlabs/cezanne/Kconfig.name"
+        ]
+      },
+      "board_revision_constraints": "Not established by the cited Kconfig target; confirm exact physical revision before any future hardware claim.",
+      "build": {
+        "supported": false,
+        "status": "upstream-target-identified",
+        "recipe_id": null,
+        "input_audit": "not_completed"
+      },
+      "validation": {
+        "project_build": "not_performed",
+        "reproducibility": "not_performed",
+        "emulator": "not_performed",
+        "hardware": "not_performed",
+        "external_hardware": "not_assessed"
+      },
+      "evidence_refs": [
+        "cb2606-board-names-starlabs-cezanne",
+        "cb2606-board-config-starlabs-cezanne"
+      ],
+      "last_verified_on": "2026-09-22",
+      "notes": "The upstream target exists at the pinned revision. This project has not yet implemented or exercised its build recipe."
+    },
+    {
+      "id": "starlabs-starbook-cezanne",
+      "kind": "board",
+      "name": "Star Labs StarBook Mk VI (Ryzen 7 5800U)",
+      "manufacturer": "Star Labs",
+      "architecture": "x86_64",
+      "cpu_vendor": "AMD",
+      "relationships": {
+        "soc_ids": [
+          "soc-cezanne"
+        ]
+      },
+      "upstream": {
+        "project": "coreboot",
+        "repository": "https://github.com/coreboot/coreboot",
+        "tag": "26.06",
+        "commit": "5cbf8afc4c08949c9b4ee1cb9dc5439add8a937e",
+        "mainboard": "starlabs/cezanne",
+        "kconfig_symbol": "BOARD_STARLABS_STARBOOK_CEZANNE",
+        "source_paths": [
+          "src/mainboard/starlabs/cezanne/Kconfig",
+          "src/mainboard/starlabs/cezanne/Kconfig.name"
+        ]
+      },
+      "board_revision_constraints": "Not established by the cited Kconfig target; confirm exact physical revision before any future hardware claim.",
+      "build": {
+        "supported": true,
+        "status": "build-verified",
+        "recipe_id": "starlabs-starbook-cezanne",
+        "source_commit": "5cbf8afc4c08949c9b4ee1cb9dc5439add8a937e",
+        "environment": "offline bubblewrap build",
+        "payload": "SeaBIOS",
+        "payload_commit": "b52ca86e094d19b58e2304417787e96b940e39c6",
+        "boot_behavior": "unknown",
+        "publication_eligibility": "held_pending_binary_license_review"
+      },
+      "validation": {
+        "project_build": "passed",
+        "artifact_structure": "passed",
+        "artifact_sha256": "34164afa45c83eb46bf1107388f9a4679ae0c22ac11d42630bd3d2b8da9b9b3b",
+        "artifact_size_bytes": 16777216,
+        "checks": [
+          "ROM image size",
+          "CBFS contains FSP-M",
+          "CBFS contains FSP-S",
+          "CBFS contains AMD firmware",
+          "CBFS contains SeaBIOS payload",
+          "EC region equals pinned EC input"
+        ],
+        "reproducibility": "passed",
+        "emulator": "not_performed",
+        "boot": "not_performed",
+        "hardware": "not_performed",
+        "external_hardware": "not_assessed",
+        "reproducibility_scope": "two independent clean builds with byte-identical ROMs under the same final recipe and pinned inputs on one host"
+      },
+      "evidence_refs": [
+        "cb2606-board-names-starlabs-cezanne",
+        "cb2606-board-config-starlabs-cezanne",
+        "coreboot-starbook-czn-blobs",
+        "coreboot-starbook-ec-license"
+      ],
+      "last_verified_on": "2026-09-22",
+      "notes": "The pinned coreboot 26.06 recipe compiled offline and produced a structurally checked ROM with documented inputs and SeaBIOS. Boot behavior and compatibility with physical hardware remain untested. Artifact publication is held for binary license review.",
+      "dependencies": [
+        {
+          "component": "Cezanne PSP/SMU firmware",
+          "domain": "security_processor",
+          "openness": "binary_only_licensing_unresolved",
+          "required": true
+        },
+        {
+          "component": "ITE EC firmware",
+          "domain": "embedded_controller",
+          "openness": "binary_only_redistributable",
+          "required": true
+        }
+      ],
+      "validation_events": [
+        {
+          "id": "local-build-20260922-starlabs-starbook-cezanne",
+          "date": "2026-09-22",
+          "type": "project_build",
+          "result": "passed",
+          "artifact_sha256": "34164afa45c83eb46bf1107388f9a4679ae0c22ac11d42630bd3d2b8da9b9b3b",
+          "scope": "offline compilation and structural inspection only; no boot or physical hardware test",
+          "recipe_path": "src/amd_fw/data/recipes/starlabs-starbook-cezanne.json"
+        },
+        {
+          "id": "same-host-repeatability-20260922-starlabs-starbook-cezanne",
+          "date": "2026-09-22",
+          "type": "reproducibility",
+          "result": "passed",
+          "scope": "two clean network-isolated builds on one host; bitwise ROM equality; no boot or physical hardware test",
+          "recipe_sha256": "d0039edd6a96f19b0c5f8280bb1d5469a93d0b1a0127104026bd429693e0be2b",
+          "artifact_sha256": "34164afa45c83eb46bf1107388f9a4679ae0c22ac11d42630bd3d2b8da9b9b3b",
+          "manifest_sha256": [
+            "88bf8b131abf5b492a2ff85453450ea05e07aacaa4126200486fcc4dab7b987e",
+            "faef22ebb8817152bdf6175aa37c7cc0f08b77b6e9bde50dbcb995ec206edbc2"
+          ],
+          "ledger_path": "docs/build-validation.json"
+        }
+      ]
+    },
+    {
+      "id": "hp-255-g10-research",
+      "kind": "research_case",
+      "name": "HP 255 G10 product-option research case",
+      "manufacturer": "HP",
+      "architecture": "x86_64",
+      "cpu_vendor": "AMD",
+      "relationships": {
+        "public_processor_option": "AMD Ryzen 3 7330U",
+        "vendor_codename": "Barcelo R",
+        "upstream_soc_match": "unverified"
+      },
+      "upstream": {
+        "project": "coreboot",
+        "mainboard": null,
+        "commit": "5cbf8afc4c08949c9b4ee1cb9dc5439add8a937e",
+        "search_scope": "src/mainboard at coreboot 26.06"
+      },
+      "build": {
+        "supported": false,
+        "status": "research-only",
+        "recipe_id": null
+      },
+      "validation": {
+        "project_build": "not_performed",
+        "reproducibility": "not_performed",
+        "emulator": "not_performed",
+        "hardware": "not_performed",
+        "external_hardware": "not_assessed"
+      },
+      "evidence_refs": [
+        "hp-255-g10-processor-options",
+        "amd-ryzen-3-7330u-identity"
+      ],
+      "last_verified_on": "2026-09-22",
+      "notes": "Public HP and AMD documents establish a product-family processor option and the processor codename. An owner-supplied survey was imported privately, but its technical observations are withheld pending an owner-reviewed allowlist export. These public sources do not identify the installed processor or board revision of a particular unit. No exact coreboot board port, build recipe, boot result, or physical experiment is claimed.",
+      "private_evidence": {
+        "source_class": "private offline survey archive, excluded from repository",
+        "publication_status": "withheld_pending_owner_allowlist_review",
+        "private_report_locator": "The import report and source archive remain in the owner's excluded private workspace.",
+        "private_import_reviewed_on": "2026-09-22",
+        "hardware_activity": "none by this project"
+      }
+    },
+    {
+      "id": "amd-family15h-tn",
+      "kind": "cpu_family",
+      "name": "AMD Family 15h TN (Trinity/Richland context)",
+      "manufacturer": "AMD",
+      "architecture": "x86_64",
+      "cpu_vendor": "AMD",
+      "upstream": {
+        "project": "coreboot",
+        "tag": "4.18",
+        "commit": "f4c97ea131944c7be940b35361407e4b63a14faf",
+        "source_path": "src/cpu/amd/agesa/family15tn/Kconfig",
+        "kconfig_symbol": "CPU_AMD_AGESA_FAMILY15_TN"
+      },
+      "maintenance_status": "historical_release_only",
+      "build": {
+        "supported": false,
+        "status": "historical-cataloged"
+      },
+      "validation": {
+        "project_build": "not_performed",
+        "reproducibility": "not_performed",
+        "emulator": "not_performed",
+        "hardware": "not_performed"
+      },
+      "evidence_refs": [
+        "cb418-family15tn-cpu",
+        "cb418-f2a85-docs"
+      ],
+      "last_verified_on": "2026-09-22",
+      "notes": "Processor-family code in a historical release; a board-level target is separate."
+    },
+    {
+      "id": "asus-f2a85-m",
+      "kind": "board",
+      "name": "ASUS F2A85-M",
+      "manufacturer": "ASUS",
+      "architecture": "x86_64",
+      "cpu_vendor": "AMD",
+      "product_class": "desktop",
+      "relationships": {
+        "cpu_family_ids": [
+          "amd-family15h-tn"
+        ]
+      },
+      "upstream": {
+        "project": "coreboot",
+        "repository": "https://github.com/coreboot/coreboot",
+        "tag": "4.18",
+        "commit": "f4c97ea131944c7be940b35361407e4b63a14faf",
+        "mainboard": "asus/f2a85-m",
+        "kconfig_symbol": "BOARD_ASUS_F2A85_M",
+        "source_paths": [
+          "src/mainboard/asus/f2a85-m/Kconfig",
+          "src/mainboard/asus/f2a85-m/Kconfig.name"
+        ]
+      },
+      "maintenance_status": "historical_release_only",
+      "board_revision_constraints": "The 4.18 source names this exact variant. Further physical revision mapping has not been reviewed.",
+      "build": {
+        "supported": false,
+        "status": "historical-target-identified",
+        "recipe_id": null,
+        "input_audit": "not_completed"
+      },
+      "validation": {
+        "project_build": "not_performed",
+        "reproducibility": "not_performed",
+        "emulator": "not_performed",
+        "hardware": "not_performed",
+        "external_hardware": "upstream_documented_historical"
+      },
+      "evidence_refs": [
+        "cb418-f2a85-config",
+        "cb418-f2a85-names",
+        "cb418-f2a85-docs"
+      ],
+      "last_verified_on": "2026-09-22",
+      "notes": "The 4.18 upstream documentation describes this variant as working, but the board is absent from the selected 26.06 source baseline. Reintroduction would require a fresh security and maintenance review."
+    },
+    {
+      "id": "asus-f2a85-m-pro",
+      "kind": "board",
+      "name": "ASUS F2A85-M PRO",
+      "manufacturer": "ASUS",
+      "architecture": "x86_64",
+      "cpu_vendor": "AMD",
+      "product_class": "desktop",
+      "relationships": {
+        "cpu_family_ids": [
+          "amd-family15h-tn"
+        ]
+      },
+      "upstream": {
+        "project": "coreboot",
+        "repository": "https://github.com/coreboot/coreboot",
+        "tag": "4.18",
+        "commit": "f4c97ea131944c7be940b35361407e4b63a14faf",
+        "mainboard": "asus/f2a85-m",
+        "kconfig_symbol": "BOARD_ASUS_F2A85_M_PRO",
+        "source_paths": [
+          "src/mainboard/asus/f2a85-m/Kconfig",
+          "src/mainboard/asus/f2a85-m/Kconfig.name"
+        ]
+      },
+      "maintenance_status": "historical_release_only",
+      "board_revision_constraints": "The 4.18 source names this exact variant. Further physical revision mapping has not been reviewed.",
+      "build": {
+        "supported": false,
+        "status": "historical-target-identified",
+        "recipe_id": null,
+        "input_audit": "not_completed"
+      },
+      "validation": {
+        "project_build": "not_performed",
+        "reproducibility": "not_performed",
+        "emulator": "not_performed",
+        "hardware": "not_performed",
+        "external_hardware": "upstream_documented_historical"
+      },
+      "evidence_refs": [
+        "cb418-f2a85-config",
+        "cb418-f2a85-names",
+        "cb418-f2a85-docs"
+      ],
+      "last_verified_on": "2026-09-22",
+      "notes": "The 4.18 upstream documentation describes this variant as working, but the board is absent from the selected 26.06 source baseline. Reintroduction would require a fresh security and maintenance review."
+    },
+    {
+      "id": "asus-f2a85-m-le",
+      "kind": "board",
+      "name": "ASUS F2A85-M LE",
+      "manufacturer": "ASUS",
+      "architecture": "x86_64",
+      "cpu_vendor": "AMD",
+      "product_class": "desktop",
+      "relationships": {
+        "cpu_family_ids": [
+          "amd-family15h-tn"
+        ]
+      },
+      "upstream": {
+        "project": "coreboot",
+        "repository": "https://github.com/coreboot/coreboot",
+        "tag": "4.18",
+        "commit": "f4c97ea131944c7be940b35361407e4b63a14faf",
+        "mainboard": "asus/f2a85-m",
+        "kconfig_symbol": "BOARD_ASUS_F2A85_M_LE",
+        "source_paths": [
+          "src/mainboard/asus/f2a85-m/Kconfig",
+          "src/mainboard/asus/f2a85-m/Kconfig.name"
+        ]
+      },
+      "maintenance_status": "historical_release_only",
+      "board_revision_constraints": "The 4.18 source names this exact variant. Further physical revision mapping has not been reviewed.",
+      "build": {
+        "supported": false,
+        "status": "historical-target-identified",
+        "recipe_id": null,
+        "input_audit": "not_completed"
+      },
+      "validation": {
+        "project_build": "not_performed",
+        "reproducibility": "not_performed",
+        "emulator": "not_performed",
+        "hardware": "not_performed",
+        "external_hardware": "upstream_documented_historical"
+      },
+      "evidence_refs": [
+        "cb418-f2a85-config",
+        "cb418-f2a85-names",
+        "cb418-f2a85-docs"
+      ],
+      "last_verified_on": "2026-09-22",
+      "notes": "The 4.18 upstream documentation describes this variant as working, but the board is absent from the selected 26.06 source baseline. Reintroduction would require a fresh security and maintenance review."
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+LibreAMD / amd-open-firmware
+Copyright 2026 Noah Weinberger for original project tooling and documentation.
+
+This repository is independent of AMD, HP, coreboot, Libreboot, openSIL, and
+other upstream projects. Those names identify their own work and products.
+Upstream source trees and binary inputs are not relicensed by this project.
+See docs/licensing.md and each upstream component's own notices.
+
+AI assistance was used to draft and implement parts of this repository.
+The test and build records describe what was actually checked. AI generation
+does not establish hardware compatibility or constitute human endorsement.

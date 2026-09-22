@@ -1,0 +1,78 @@
+{
+  "schema_version": 1,
+  "updated_on": "2026-09-22",
+  "owner": "Noah Weinberger",
+  "project": "LibreAMD research and build tooling",
+  "repository_visibility": "private_required",
+  "hardware_boundary": "No physical firmware, SPI, EC, TPM, or platform-security access; Momiji survey-only",
+  "phases": [
+    {
+      "id": 0,
+      "name": "environment_and_scope",
+      "status": "completed",
+      "evidence": "Authorized GitHub account and local build host inspected; private Momiji archive found in ChatGPT and copied outside Git"
+    },
+    {
+      "id": 1,
+      "name": "upstream_landscape",
+      "status": "completed",
+      "evidence": "65 target records and 62 primary-source references at pinned or named upstream revisions"
+    },
+    {
+      "id": 2,
+      "name": "package_catalog_and_cli",
+      "status": "completed",
+      "evidence": "Installable Python package, catalog validator, CLI, and synthetic tests"
+    },
+    {
+      "id": 3,
+      "name": "offline_workbench",
+      "status": "completed",
+      "evidence": "Bounded survey importer, private Momiji report, review-gated allowlist export capability, and opaque firmware inspection; no public Momiji export made"
+    },
+    {
+      "id": 4,
+      "name": "board_builds",
+      "status": "completed",
+      "evidence": "APU2 and StarBook final-recipe module builds passed; each has two clean byte-identical ROMs and verified private manifests"
+    },
+    {
+      "id": 5,
+      "name": "coverage_expansion",
+      "status": "completed_initial_pass",
+      "evidence": "Current and historical AMD SoC and exact-board records separated from recipes"
+    },
+    {
+      "id": 6,
+      "name": "integrated_validation",
+      "status": "completed_local",
+      "evidence": "Final local suite 81/81, Ruff format/lint, compileall, 65-target/62-evidence catalog, two final-recipe AMD repeatability checks, generic QEMU guest-signal smoke, and fresh wheel install passed; GitHub CI pending"
+    },
+    {
+      "id": 7,
+      "name": "documentation_and_handoff",
+      "status": "completed",
+      "evidence": "README, architecture/security/licensing docs, Fish A-P runbook, and evidence-backed handoff written and locally checked"
+    },
+    {
+      "id": 8,
+      "name": "audit_and_private_push",
+      "status": "audit_passed_push_pending",
+      "evidence": "Initial staged scanner and privacy review passed; final staged scan, private push, and CI pending"
+    }
+  ],
+  "future_requested_work": [
+    {
+      "id": "maple-nekokami-uefi-art",
+      "description": "ASCII Maple Nekokami catgirl art for a future UEFI page",
+      "timing": "Only after engineering and delivery work is finished",
+      "status": "deferred"
+    },
+    {
+      "id": "maple-nekokami-bluesky-announcement",
+      "description": "Post project thread in Maple Nekokami voice, tag owner, and link the thread on GitHub",
+      "timing": "Final delivery step after private repository and CI are complete",
+      "status": "pending"
+    }
+  ]
+}

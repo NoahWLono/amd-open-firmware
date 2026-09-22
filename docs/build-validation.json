@@ -1,0 +1,85 @@
+{
+  "schema_version": 1,
+  "recorded_on": "2026-09-22",
+  "scope": "local development host; build and offline structure only",
+  "coreboot_commit": "5cbf8afc4c08949c9b4ee1cb9dc5439add8a937e",
+  "toolchain_lock_sha256": "b16f4675af515e121a2c234dca41b2c12cd375192d6020ae25aa25875a697af4",
+  "amd_board_builds": [
+    {
+      "target": "pcengines-apu2",
+      "platform_family": "Puma / AMD GX-412TC",
+      "recipe_sha256": "471d22ba5e1fbe12cdeb017b3cbee501139fbeb0489c62996f946a51683cc249",
+      "source_commit": "5cbf8afc4c08949c9b4ee1cb9dc5439add8a937e",
+      "rom_sha256": "519ec13807fc3e514d158c9c4fffd080e2a1454890d477a8f4f083a8856dbef5",
+      "rom_size_bytes": 8388608,
+      "runs": [
+        {
+          "run_id": "20260922T214832Z-9bcf2fd3",
+          "manifest_sha256": "19de101f5d64ca8431dbc1aaa4411c84ca46134c70f76a6e22593c2204f3a4fb",
+          "artifact_verified": true
+        },
+        {
+          "run_id": "20260922T215107Z-30b096d9",
+          "manifest_sha256": "1b8fc13caaff5ad5063040b6de5658ec74b0ad6bfde9dc36dd4a4bfdcaab3aed",
+          "artifact_verified": true
+        }
+      ],
+      "comparison": {
+        "status": "byte_identical",
+        "method": "direct byte comparison",
+        "first_difference_offset": null,
+        "private_report_sha256": "05a4154ee2f814da9cbec7b7a0870bf4b45205c037651e21ddd63d1e46b11129"
+      },
+      "source_verification": "passed",
+      "component_inventory_scope": "Curated source, submodule, and explicitly required binary inputs; not a complete per-file SBOM.",
+      "hardware_tested": false,
+      "publication_eligible": false
+    },
+    {
+      "target": "starlabs-starbook-cezanne",
+      "platform_family": "Cezanne / Ryzen 7 5800U",
+      "recipe_sha256": "d0039edd6a96f19b0c5f8280bb1d5469a93d0b1a0127104026bd429693e0be2b",
+      "source_commit": "5cbf8afc4c08949c9b4ee1cb9dc5439add8a937e",
+      "rom_sha256": "34164afa45c83eb46bf1107388f9a4679ae0c22ac11d42630bd3d2b8da9b9b3b",
+      "rom_size_bytes": 16777216,
+      "runs": [
+        {
+          "run_id": "20260922T214239Z-d6c24955",
+          "manifest_sha256": "88bf8b131abf5b492a2ff85453450ea05e07aacaa4126200486fcc4dab7b987e",
+          "artifact_verified": true
+        },
+        {
+          "run_id": "20260922T214519Z-588b4e61",
+          "manifest_sha256": "faef22ebb8817152bdf6175aa37c7cc0f08b77b6e9bde50dbcb995ec206edbc2",
+          "artifact_verified": true
+        }
+      ],
+      "comparison": {
+        "status": "byte_identical",
+        "method": "amd-fw reproduce plus direct byte comparison",
+        "first_difference_offset": null,
+        "private_report_sha256": "a7c791802d689a675dac9e44bbf4014739003ee66d17b342e9bb4ed3196646d5"
+      },
+      "source_verification": "passed",
+      "component_inventory_scope": "Curated source, submodule, and explicitly required binary inputs; not a complete per-file SBOM. Additional Cezanne PSP files referenced by pinned fw.cfg and amd_blobs may be incorporated without individual hashes in this manifest.",
+      "hardware_tested": false,
+      "publication_eligible": false
+    }
+  ],
+  "generic_virtual_smoke": {
+    "board": "emulation/qemu-i440fx",
+    "status": "passed",
+    "rom_sha256": "544bde9eec85b4e7d1d36add97bd4d3a68d3bfa7661bbbe0c00e0087bd440b58",
+    "serial_success_signal_seen": true,
+    "qemu_exit_code": 33,
+    "amd_silicon_validation": false,
+    "physical_hardware_access": false
+  },
+  "limits": [
+    "No AMD image was booted in an emulator or on physical hardware.",
+    "Repeatability is limited to the pinned inputs and one host; executable versions are locked but host libraries and kernel are not.",
+    "Manifests inventory selected components and required inputs, not every incorporated firmware file.",
+    "Generated AMD ROM publication remains held for binary license review."
+  ],
+  "toolchain_lock_hash_basis": "canonical sorted JSON, matching build manifests"
+}

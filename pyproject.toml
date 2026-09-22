@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools==84.0.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "amd-open-firmware"
+version = "0.1.0"
+description = "Independent, evidence-based AMD open firmware tooling"
+readme = "README.md"
+requires-python = ">=3.11"
+license = "Apache-2.0"
+authors = [{name = "Noah Weinberger"}]
+dependencies = []
+
+[project.scripts]
+amd-fw = "amd_fw.cli:main"
+
+[project.optional-dependencies]
+dev = ["ruff==0.13.0"]
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+amd_fw = ["data/*.json", "data/recipes/*.json"]

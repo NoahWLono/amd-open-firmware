@@ -1,0 +1,3 @@
+# The build backend version is pinned in pyproject.toml too.
+setuptools==84.0.0
+ruff==0.13.0

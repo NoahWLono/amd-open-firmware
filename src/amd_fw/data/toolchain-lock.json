@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "profile": "arch-linux-host-2026-09-22",
+  "versions": {
+    "gcc": "gcc (GCC) 16.2.1 20260810",
+    "make": "GNU Make 4.4.1",
+    "git": "git version 2.55.0",
+    "bwrap": "bubblewrap 0.13.0",
+    "iasl": "ASL+ Optimizing Compiler/Disassembler version 20251212",
+    "ld": "GNU ld (GNU Binutils) 2.47",
+    "as": "GNU assembler (GNU Binutils) 2.47",
+    "bison": "bison (GNU Bison) 3.8.2",
+    "flex": "flex 2.6.4",
+    "python3": "Python 3.14.7"
+  },
+  "scope": "Exact host executable versions for the measured builds; operating-system libraries and kernel are not immutable. Reproducibility claims require two builds in the same matching host environment."
+}

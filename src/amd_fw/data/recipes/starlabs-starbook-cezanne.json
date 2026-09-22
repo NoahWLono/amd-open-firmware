@@ -1,0 +1,110 @@
+{
+  "schema_version": 1,
+  "id": "starlabs-starbook-cezanne",
+  "name": "Star Labs StarBook Mk VI AMD",
+  "soc": "AMD Cezanne (Zen 3, Ryzen 7 5800U)",
+  "board_symbol": "BOARD_STARLABS_STARBOOK_CEZANNE",
+  "coreboot": {
+    "url": "https://review.coreboot.org/coreboot.git",
+    "release": "26.06",
+    "commit": "5cbf8afc4c08949c9b4ee1cb9dc5439add8a937e",
+    "board_path": "src/mainboard/starlabs/cezanne"
+  },
+  "submodules": [
+    {
+      "path": "3rdparty/blobs",
+      "url": "https://review.coreboot.org/blobs.git",
+      "commit": "4a8de0324e7d389454ec33cdf66939b653bf6800",
+      "license": "Star Labs EC binary licensed under MIT in 3rdparty/blobs/mainboard/starlabs/MIT.md"
+    },
+    {
+      "path": "3rdparty/amd_blobs",
+      "url": "https://review.coreboot.org/amd_blobs",
+      "commit": "588da8d6deb4b9be60ccedfa76e721c6a2ea9464",
+      "license": "AMD 2019 binary-only license with redistribution conditions; explicit agreement required"
+    },
+    {
+      "path": "3rdparty/vboot",
+      "url": "https://review.coreboot.org/vboot.git",
+      "commit": "5c360ef458b0a013d8a6d47724bb0fffb5accbcf",
+      "license": "BSD-style source license in upstream repository"
+    }
+  ],
+  "seabios": {
+    "url": "https://review.coreboot.org/seabios.git",
+    "commit": "b52ca86e094d19b58e2304417787e96b940e39c6"
+  },
+  "defconfig": [
+    "CONFIG_VENDOR_STARLABS=y",
+    "CONFIG_BOARD_STARLABS_STARBOOK_CEZANNE=y",
+    "CONFIG_USE_BLOBS=y",
+    "CONFIG_USE_AMD_BLOBS=y",
+    "CONFIG_ANY_TOOLCHAIN=y",
+    "CONFIG_PAYLOAD_SEABIOS=y",
+    "CONFIG_SEABIOS_REVISION=y",
+    "CONFIG_SEABIOS_REVISION_ID=\"b52ca86e094d19b58e2304417787e96b940e39c6\"",
+    "CONFIG_EC_STARLABS_ADD_ITE_BIN=y",
+    "CONFIG_EC_STARLABS_ITE_BIN_PATH=\"3rdparty/blobs/mainboard/starlabs/cezanne/starbook/ec.bin\""
+  ],
+  "required_files": [
+    {
+      "path": "3rdparty/amd_blobs/cezanne/CEZANNE_M.fd",
+      "sha256": "85eabde9c41e5b2cb487a09c95343e7fe8fb91157d679fd7092f6429d843391f",
+      "role": "FSP memory initialization",
+      "license": "AMD 2019 binary license",
+      "openness": "binary_only_restricted"
+    },
+    {
+      "path": "3rdparty/amd_blobs/cezanne/CEZANNE_S.fd",
+      "sha256": "5a2388563e420c0e9b6396b73f1ae946e88ff4a42ce9d2ac1cd2a1eb84057f8b",
+      "role": "FSP silicon initialization",
+      "license": "AMD 2019 binary license",
+      "openness": "binary_only_restricted"
+    },
+    {
+      "path": "3rdparty/amd_blobs/cezanne/CezanneGenericVbios.bin",
+      "sha256": "18b8919e766e430d2c34ca780f295f93bb1ec02c2f88756478780af0f19b6af3",
+      "role": "graphics option ROM",
+      "license": "AMD 2019 binary license",
+      "openness": "binary_only_restricted"
+    },
+    {
+      "path": "3rdparty/amd_blobs/cezanne/PSP/UcodePatch_CZN_A0.bin",
+      "sha256": "45d60be204f3f58bce346caf7d4e6d38eeed7c9882414d1a87ab07f75178679d",
+      "role": "AMD CPU microcode patch for Cezanne A0",
+      "license": "AMD 2019 binary license",
+      "openness": "binary_only_restricted"
+    },
+    {
+      "path": "3rdparty/blobs/mainboard/starlabs/cezanne/starbook/ec.bin",
+      "sha256": "d38ca4dbca62e6f90000a0cabd13b6569a1bbf786744b3a05feb5ba54f3d70d9",
+      "role": "ITE embedded controller firmware",
+      "license": "Star Labs MIT license",
+      "openness": "binary_only_redistributable"
+    }
+  ],
+  "expected_rom_size": 16777216,
+  "expected_cbfs_entries": ["fspm.bin", "fsps.bin", "cpu_microcode_a500.bin", "pci1002,1638.rom", "apu/amdfw", "fallback/payload"],
+  "expected_embedded_regions": [
+    {
+      "name": "EC",
+      "offset": 0,
+      "size": 131072,
+      "source_path": "3rdparty/blobs/mainboard/starlabs/cezanne/starbook/ec.bin"
+    }
+  ],
+  "restricted_license_documents": [
+    "3rdparty/amd_blobs/LICENSE.txt",
+    "3rdparty/blobs/mainboard/starlabs/MIT.md"
+  ],
+  "publication_eligible": false,
+  "hardware_tested": false,
+  "source_refs": [
+    "https://doc.coreboot.org/mainboard/starlabs/starbook_czn.html",
+    "https://doc.coreboot.org/soc/amd/amdblobs_license.html",
+    "https://github.com/coreboot/coreboot/blob/5cbf8afc4c08949c9b4ee1cb9dc5439add8a937e/src/mainboard/starlabs/cezanne/Kconfig",
+    "https://github.com/coreboot/coreboot/blob/5cbf8afc4c08949c9b4ee1cb9dc5439add8a937e/src/soc/amd/common/block/cpu/Makefile.mk",
+    "https://github.com/coreboot/coreboot/blob/5cbf8afc4c08949c9b4ee1cb9dc5439add8a937e/src/soc/amd/cezanne/fw.cfg",
+    "https://github.com/coreboot/amd_blobs/blob/588da8d6deb4b9be60ccedfa76e721c6a2ea9464/cezanne/PSP/UcodePatch_CZN_A0.bin"
+  ]
+}

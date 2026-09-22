@@ -1,0 +1,82 @@
+{
+  "schema_version": 1,
+  "id": "pcengines-apu2",
+  "name": "PC Engines APU2",
+  "soc": "AMD GX-412TC (Puma)",
+  "board_symbol": "BOARD_PCENGINES_APU2",
+  "coreboot": {
+    "url": "https://review.coreboot.org/coreboot.git",
+    "release": "26.06",
+    "commit": "5cbf8afc4c08949c9b4ee1cb9dc5439add8a937e",
+    "board_path": "src/mainboard/pcengines/apu2"
+  },
+  "submodules": [
+    {
+      "path": "3rdparty/blobs",
+      "url": "https://review.coreboot.org/blobs.git",
+      "commit": "4a8de0324e7d389454ec33cdf66939b653bf6800",
+      "license": "AMD Object Code Distribution Agreement for AGESA and Avalon PSP inputs; restrictive binary-only terms"
+    },
+    {
+      "path": "3rdparty/vboot",
+      "url": "https://review.coreboot.org/vboot.git",
+      "commit": "5c360ef458b0a013d8a6d47724bb0fffb5accbcf",
+      "license": "BSD-style source license in upstream repository"
+    }
+  ],
+  "seabios": {
+    "url": "https://review.coreboot.org/seabios.git",
+    "commit": "b52ca86e094d19b58e2304417787e96b940e39c6"
+  },
+  "defconfig": [
+    "CONFIG_VENDOR_PCENGINES=y",
+    "CONFIG_BOARD_PCENGINES_APU2=y",
+    "CONFIG_USE_BLOBS=y",
+    "CONFIG_ANY_TOOLCHAIN=y",
+    "CONFIG_PAYLOAD_SEABIOS=y",
+    "CONFIG_SEABIOS_REVISION=y",
+    "CONFIG_SEABIOS_REVISION_ID=\"b52ca86e094d19b58e2304417787e96b940e39c6\""
+  ],
+  "required_files": [
+    {
+      "path": "3rdparty/blobs/mainboard/pcengines/apu2/AGESA.bin",
+      "sha256": "8b5578b3f4d4453c5093b18501230c7cf46525dad12b5f1aae95abb636d0c0d0",
+      "role": "platform initialization",
+      "license": "AMD Object Code Distribution Agreement",
+      "openness": "binary_only_restricted"
+    },
+    {
+      "path": "3rdparty/blobs/southbridge/amd/avalon/PSP/PspBootLoader.Bypass.sbin",
+      "sha256": "9b4f3a8b0d31bde68f1e0816705df2298bab70f44a4ae8a446645477b6414398",
+      "role": "upstream Avalon PSP bootloader input",
+      "license": "AMD Object Code Distribution Agreement",
+      "openness": "binary_only_restricted"
+    },
+    {
+      "path": "3rdparty/blobs/southbridge/amd/avalon/PSP/PspSecureOs.sbin",
+      "sha256": "86e6175e1770d8ae5be7c6092e3cd7221aca629275e63c7b6313282b07a828fb",
+      "role": "PSP operating system",
+      "license": "AMD Object Code Distribution Agreement",
+      "openness": "binary_only_restricted"
+    },
+    {
+      "path": "3rdparty/blobs/southbridge/amd/avalon/PSP/SmuFirmware.sbin",
+      "sha256": "8a740afe0a110db5f7692c968b6e5b9faec394b4c257518bd25f86b7419b2cea",
+      "role": "system management unit firmware",
+      "license": "AMD Object Code Distribution Agreement",
+      "openness": "binary_only_restricted"
+    }
+  ],
+  "expected_rom_size": 8388608,
+  "expected_cbfs_entries": ["AGESA", "apu/amdfw", "fallback/payload"],
+  "restricted_license_documents": [
+    "3rdparty/blobs/pi/amd/00730F01/FT3b/license.txt",
+    "3rdparty/blobs/southbridge/amd/avalon/PSP/license.txt"
+  ],
+  "publication_eligible": false,
+  "hardware_tested": false,
+  "source_refs": [
+    "https://doc.coreboot.org/mainboard/pcengines/apu2.html",
+    "https://github.com/coreboot/coreboot/blob/5cbf8afc4c08949c9b4ee1cb9dc5439add8a937e/src/mainboard/pcengines/apu2/Kconfig"
+  ]
+}
