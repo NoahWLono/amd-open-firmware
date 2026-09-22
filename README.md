@@ -51,6 +51,10 @@ No normal command flashes firmware, reads a physical SPI chip, probes EC or SMBu
 - [Architecture](docs/architecture.md), [evidence policy](docs/evidence-policy.md), [licensing](docs/licensing.md), and [privacy](docs/privacy.md).
 - [Contributing](CONTRIBUTING.md), [security reporting](SECURITY.md), [license](LICENSE), and [notices](NOTICE).
 
+## Project announcement
+
+Maple Nekokami posted a [six-part Bluesky thread](https://bsky.app/profile/maple-nekokami.bsky.social/post/3mw5aev5nxl2e) about the verified build scope, the offline workbench, and the no-hardware boundary.
+
 ## Exit status
 
 `amd-fw` returns `0` on success, `2` for invalid or rejected input, `3` for an unknown target, `4` for missing dependencies or inputs, `5` for integrity or schema failures, and `6` for other operational failures. The `--json` option belongs before the command name. Error text goes to standard error except rejected or failed structured operations requested with `--json`.

@@ -20,6 +20,7 @@ sources, and one owner-supplied archive imported offline.
 - Validated source commit: `ef70dd163e6cf0ff3ee671431987cc31c5c4ec37`,
   pushed to the branch and confirmed by `git ls-remote`. The Node.js 24 CI
   update was verified on `391d6bc6996e907739916c24bb157fdb9b934ec3`.
+  The delivery handoff was verified on `f84c5e187f7886a0643af57acc53902af1934165`.
   Resolve the current document commit with `git rev-parse HEAD`; this file
   cannot contain its own commit hash.
 - Progress ledger: [docs/progress.json](docs/progress.json). Source evidence
@@ -89,6 +90,16 @@ pins target deprecated Node.js 20. The workflow now pins official Node.js 24
 versions of checkout and setup-python. [Run 35789999557](https://github.com/NoahWLono/amd-open-firmware/actions/runs/35789999557)
 passed on commit `391d6bc`, including install, format, lint, tests, catalog
 validation, and staged-content audit.
+[Run 35790235207](https://github.com/NoahWLono/amd-open-firmware/actions/runs/35790235207)
+also passed on the delivery handoff commit `f84c5e1`.
+
+## Announcement
+
+Maple Nekokami posted a [six-part Bluesky thread](https://bsky.app/profile/maple-nekokami.bsky.social/post/3mw5aev5nxl2e)
+about the project. All six posts, their reply chain, the owner's mention, and
+the repository link were read back and verified through the account's public
+records. The GitHub README links that thread. Account credentials were not
+written to this repository or the private evidence directory.
 
 ## Private evidence and publication boundary
 
@@ -114,20 +125,17 @@ firmware image belongs in the Git repository.
 
 ## Known gaps and next engineering steps
 
-1. Finish the requested Bluesky announcement in Maple Nekokami's voice after
-   this delivery checkpoint is pushed and CI passes. Tag the owner's account,
-   then link the thread from GitHub and verify the final push and CI run.
-2. Complete a per-file component inventory and distribution-rights review
+1. Complete a per-file component inventory and distribution-rights review
    before considering generated ROMs as release assets. The host toolchain
    lock is not a fully hermetic build environment.
-3. Add an explicit verified staging path before a future recipe can use a
+2. Add an explicit verified staging path before a future recipe can use a
    separately supplied binary. Manually adding untracked files to the source
    cache is not a reliable build input method.
-4. For any future hardware work on a different board, obtain separate
+3. For any future hardware work on a different board, obtain separate
    action-specific authorization and an independently established recovery
    process. Momiji remains excluded. For the private Momiji case, an owner
    review is required before any allowlisted public case export.
-5. The owner requested ASCII Maple Nekokami catgirl art for a future UEFI page
+4. The owner requested ASCII Maple Nekokami catgirl art for a future UEFI page
    only after the project is fully operational. No UEFI page or physical boot
    has been implemented, so this remains deferred.
 

@@ -72,7 +72,10 @@
       "id": "maple-nekokami-bluesky-announcement",
       "description": "Post project thread in Maple Nekokami voice, tag owner, and link the thread on GitHub",
       "timing": "Final delivery step after private repository and CI are complete",
-      "status": "pending"
+      "status": "completed",
+      "completed_on": "2026-09-22",
+      "thread_url": "https://bsky.app/profile/maple-nekokami.bsky.social/post/3mw5aev5nxl2e",
+      "verification": "Six public post records, reply chain, owner mention facet, and repository link facet verified; README includes thread link"
     }
   ]
 }
